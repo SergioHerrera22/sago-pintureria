@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outlet - SAGO Pinturas</title>
+
+    <!-- Hojas de estilo externas -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/home.css">
+    
+    <!-- Font Awesome para iconografía -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Google Fonts - Source Sans 3 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Banner superior - Ofertas destacadas -->
+    <div class="aviso-ofertas">
+        <i class="fas fa-fire-alt"></i>
+        <p>2 x 1 en Aerosoles Krylon, pagás el de mayor valor.</p>
+    </div>
+
+    <!-- Encabezado principal -->
+    <header>
+        <!-- Barra de navegación superior: Logo, buscador y acciones de usuario -->
+        <div class="nav-topBar">
+            <div class="logo">
+                <a href="./index.html">
+                    <img src="./img/LOGO_SAGO.svg" alt="Logo SAGO Pinturas">
+                </a>
+            </div>
+
+            <div class="buscador">
+                <input type="search" placeholder="Buscar...">
+                <i class="fa fa-search" aria-hidden="true"></i>
+            </div>
+
+            <div class="iconos">
+                <i class="fal fa-heart"></i>
+                <a href="">Login</a>
+                <i class="far fa-shopping-cart"></i>
+            </div>
+        </div>
+
+        <!-- Menú de navegación principal -->
+        <nav class="nav-downBar">
+            <ul class="nav-downBar-container-items">
+                <li><a href="productos.html"><i class="fas fa-box"></i> Productos</a></li>
+                <li><a href="ofertas.html"><i class="fas fa-tag"></i> Ofertas</a></li>
+                <li><a href="inspiracion.html"><i class="fas fa-lightbulb"></i> Inspiración</a></li>
+                <li><a href="outlet.html" class="active"><i class="fas fa-percent"></i> Outlet</a></li>
+                <li><a href="servicios.html"><i class="fas fa-tools"></i> Servicios</a></li>
+                <li><a href="nosotros.html"><i class="fas fa-users"></i> Nosotros</a></li>
+                <li><a href="contacto.html"><i class="fas fa-envelope"></i> Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contenido-principal">
+        <!-- Banner de sección -->
+        <section class="banner-seccion">
+            <h1>Outlet</h1>
+            <p>¡Encontrá los mejores precios en productos seleccionados!</p>
+        </section>
+
+        <!-- Filtros y ordenamiento -->
+        <div class="filtros-outlet">
+            <h3><i class="fas fa-filter"></i> Filtrar por:</h3>
+            <div class="filtros-lista">
+                <span class="filtro-tag active">Todos</span>
+                <span class="filtro-tag">Pinturas</span>
+                <span class="filtro-tag">Aerosoles</span>
+                <span class="filtro-tag">Accesorios</span>
+                <span class="filtro-tag">Herramientas</span>
+            </div>
+        </div>
+
+        <div class="ordenamiento">
+            <label for="orden">Ordenar por:</label>
+            <select id="orden" name="orden">
+                <option value="mayor_descuento">Mayor descuento</option>
+                <option value="menor_precio">Menor precio</option>
+                <option value="mayor_precio">Mayor precio</option>
+                <option value="mas_nuevo">Más nuevo</option>
+            </select>
+        </div>
+
+        <div class="resultados-count">
+            <p>Mostrando 12 productos en outlet</p>
+        </div>
+
+        <!-- Grid de productos en outlet -->
+        <div class="products">
+            <!-- Producto 1 -->
+            <div class="product-item outlet-item">
+                <span class="outlet-badge">-40%</span>
+                <button class="btn-agregar-carrito">
+                    <i class="fas fa-shopping-cart"></i>
+                </button>
+                <img src="./img/productos/pintura1.jpg" alt="Pintura Látex Interior">
+                <div class="product-info">
+                    <h3>Pintura Látex Interior</h3>
+                    <p>20 litros - Blanco</p>
+                    <div class="precio-container">
+                        <span class="precio-anterior">$25.000</span>
+                        <span class="precio-producto">$15.000</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Producto 2 -->
+            <div class="product-item outlet-item">
+                <span class="outlet-badge">-30%</span>
+                <button class="btn-agregar-carrito">
+                    <i class="fas fa-shopping-cart"></i>
+                </button>
+                <img src="./img/productos/pintura2.jpg" alt="Esmalte Sintético">
+                <div class="product-info">
+                    <h3>Esmalte Sintético</h3>
+                    <p>4 litros - Negro</p>
+                    <div class="precio-container">
+                        <span class="precio-anterior">$12.000</span>
+                        <span class="precio-producto">$8.400</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Producto 3 -->
+            <div class="product-item outlet-item">
+                <span class="outlet-badge">-50%</span>
+                <button class="btn-agregar-carrito">
+                    <i class="fas fa-shopping-cart"></i>
+                </button>
+                <img src="./img/productos/pintura3.jpg" alt="Kit de Rodillos">
+                <div class="product-info">
+                    <h3>Kit de Rodillos Profesional</h3>
+                    <p>3 piezas + bandeja</p>
+                    <div class="precio-container">
+                        <span class="precio-anterior">$8.000</span>
+                        <span class="precio-producto">$4.000</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Producto 4 -->
+            <div class="product-item outlet-item">
+                <span class="outlet-badge">-25%</span>
+                <button class="btn-agregar-carrito">
+                    <i class="fas fa-shopping-cart"></i>
+                </button>
+                <img src="./img/productos/pintura4.jpg" alt="Aerosol Multiuso">
+                <div class="product-info">
+                    <h3>Aerosol Multiuso</h3>
+                    <p>400ml - Varios colores</p>
+                    <div class="precio-container">
+                        <span class="precio-anterior">$3.200</span>
+                        <span class="precio-producto">$2.400</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p><i class="far fa-copyright"></i> Copyright 2025 SAGO Pinturas. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

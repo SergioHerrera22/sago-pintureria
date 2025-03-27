@@ -1,0 +1,11 @@
+.contenedor-formulario{
+   background-color: #f7f7f7;
+   margin: 20px auto;
+    
+}
+@media (min-width:768px){
+    .contenedor-formulario{
+        max-width: 800px;
+        padding: 20px;
+    }
+}

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos - SAGO Pinturas</title>
+
+    <!-- Hojas de estilo externas -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/productos.css">
+    
+    <!-- Font Awesome para iconografía -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Google Fonts - Source Sans 3 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Banner superior - Ofertas destacadas -->
+    <div class="aviso-ofertas">
+        <i class="fas fa-fire-alt"></i>
+        <p>2 x 1 en Aerosoles Krylon, pagás el de mayor valor.</p>
+    </div>
+
+    <!-- Encabezado principal -->
+    <header>
+        <!-- Barra de navegación superior: Logo, buscador y acciones de usuario -->
+        <div class="nav-topBar">
+            <div class="logo">
+                <a href="./index.html">
+                    <img src="./img/LOGO_SAGO.svg" alt="Logo SAGO Pinturas">
+                </a>
+            </div>
+
+            <div class="buscador">
+                <input type="search" placeholder="Buscar...">
+                <i class="fa fa-search" aria-hidden="true"></i>
+            </div>
+
+            <div class="iconos">
+                <i class="fal fa-heart"></i>
+                <a href="">Login</a>
+                <i class="far fa-shopping-cart"></i>
+            </div>
+        </div>
+
+        <!-- Menú de navegación principal -->
+        <nav class="nav-downBar">
+            <ul class="nav-downBar-container-items">
+                <li><a href="productos.html" class="active"><i class="fas fa-box"></i> Productos</a></li>
+                <li><a href="ofertas.html"><i class="fas fa-tag"></i> Ofertas</a></li>
+                <li><a href="inspiracion.html"><i class="fas fa-lightbulb"></i> Inspiración</a></li>
+                <li><a href="outlet.html"><i class="fas fa-percent"></i> Outlet</a></li>
+                <li><a href="servicios.html"><i class="fas fa-tools"></i> Servicios</a></li>
+                <li><a href="nosotros.html"><i class="fas fa-users"></i> Nosotros</a></li>
+                <li><a href="contacto.html"><i class="fas fa-envelope"></i> Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contenido-principal">
+        <!-- Banner de sección -->
+        <section class="banner-seccion">
+            <h1>Productos</h1>
+            <p>Encontrá todo lo que necesitás para tu proyecto</p>
+        </section>
+
+        <div class="productos-container">
+            <!-- Sidebar de filtros -->
+            <aside class="sidebar-filtros">
+                <!-- Filtro por categoría -->
+                <div class="filtro-seccion">
+                    <h3><i class="fas fa-tags"></i> Categorías</h3>
+                    <div class="filtro-lista">
+                        <label class="filtro-item">
+                            <input type="checkbox" checked> Pinturas
+                        </label>
+                        <label class="filtro-item">
+                            <input type="checkbox"> Aerosoles
+                        </label>
+                        <label class="filtro-item">
+                            <input type="checkbox"> Accesorios
+                        </label>
+                        <label class="filtro-item">
+                            <input type="checkbox"> Herramientas
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Filtro por marca -->
+                <div class="filtro-seccion">
+                    <h3><i class="fas fa-industry"></i> Marcas</h3>
+                    <div class="filtro-lista">
+                        <label class="filtro-item">
+                            <input type="checkbox"> Alba
+                        </label>
+                        <label class="filtro-item">
+                            <input type="checkbox"> Sherwin Williams
+                        </label>
+                        <label class="filtro-item">
+                            <input type="checkbox"> Colorín
+                        </label>
+                        <label class="filtro-item">
+                            <input type="checkbox"> Tersuave
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Filtro por precio -->
+                <div class="filtro-seccion">
+                    <h3><i class="fas fa-dollar-sign"></i> Precio</h3>
+                    <div class="rango-precio">
+                        <div class="precio-inputs">
+                            <input type="number" placeholder="Mín." value="0">
+                            <span>-</span>
+                            <input type="number" placeholder="Máx." value="50000">
+                        </div>
+                        <input type="range" class="precio-slider" min="0" max="50000" value="25000">
+                    </div>
+                </div>
+            </aside>
+
+            <!-- Contenido principal de productos -->
+            <div class="productos-contenido">
+                <!-- Controles superiores -->
+                <div class="productos-controles">
+                    <div class="vista-controles">
+                        <button class="vista-btn active" title="Vista grilla">
+                            <i class="fas fa-th-large"></i>
+                        </button>
+                        <button class="vista-btn" title="Vista lista">
+                            <i class="fas fa-list"></i>
+                        </button>
+                    </div>
+
+                    <select class="ordenar-select">
+                        <option value="relevancia">Más relevantes</option>
+                        <option value="precio_menor">Menor precio</option>
+                        <option value="precio_mayor">Mayor precio</option>
+                        <option value="nuevos">Más nuevos</option>
+                    </select>
+                </div>
+
+                <!-- Grid de productos -->
+                <div class="productos-grid">
+                    <!-- Producto 1 -->
+                    <article class="producto-card">
+                        <div class="producto-imagen">
+                            <img src="./img/productos/pintura1.jpg" alt="Pintura Látex Interior">
+                            <div class="producto-acciones">
+                                <button class="btn-accion" title="Agregar a favoritos">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                                <button class="btn-accion" title="Agregar al carrito">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="producto-info">
+                            <span class="producto-categoria">Pinturas</span>
+                            <h3 class="producto-titulo">Pintura Látex Interior</h3>
+                            <span class="producto-precio">$25.000</span>
+                            <span class="producto-stock">
+                                <i class="fas fa-check-circle"></i> Stock disponible
+                            </span>
+                        </div>
+                    </article>
+
+                    <!-- Producto 2 -->
+                    <article class="producto-card">
+                        <div class="producto-imagen">
+                            <img src="./img/productos/pintura2.jpg" alt="Esmalte Sintético">
+                            <div class="producto-acciones">
+                                <button class="btn-accion" title="Agregar a favoritos">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                                <button class="btn-accion" title="Agregar al carrito">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="producto-info">
+                            <span class="producto-categoria">Pinturas</span>
+                            <h3 class="producto-titulo">Esmalte Sintético</h3>
+                            <span class="producto-precio">$12.000</span>
+                            <span class="producto-stock">
+                                <i class="fas fa-check-circle"></i> Stock disponible
+                            </span>
+                        </div>
+                    </article>
+
+                    <!-- Producto 3 -->
+                    <article class="producto-card">
+                        <div class="producto-imagen">
+                            <img src="./img/productos/pintura3.jpg" alt="Kit de Rodillos">
+                            <div class="producto-acciones">
+                                <button class="btn-accion" title="Agregar a favoritos">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                                <button class="btn-accion" title="Agregar al carrito">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="producto-info">
+                            <span class="producto-categoria">Accesorios</span>
+                            <h3 class="producto-titulo">Kit de Rodillos Profesional</h3>
+                            <span class="producto-precio">$8.000</span>
+                            <span class="producto-stock">
+                                <i class="fas fa-check-circle"></i> Stock disponible
+                            </span>
+                        </div>
+                    </article>
+
+                    <!-- Producto 4 -->
+                    <article class="producto-card">
+                        <div class="producto-imagen">
+                            <img src="./img/productos/pintura4.jpg" alt="Aerosol Multiuso">
+                            <div class="producto-acciones">
+                                <button class="btn-accion" title="Agregar a favoritos">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                                <button class="btn-accion" title="Agregar al carrito">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="producto-info">
+                            <span class="producto-categoria">Aerosoles</span>
+                            <h3 class="producto-titulo">Aerosol Multiuso</h3>
+                            <span class="producto-precio">$3.200</span>
+                            <span class="producto-stock">
+                                <i class="fas fa-check-circle"></i> Stock disponible
+                            </span>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Paginación -->
+                <div class="paginacion">
+                    <button class="btn-pagina"><i class="fas fa-chevron-left"></i></button>
+                    <button class="btn-pagina active">1</button>
+                    <button class="btn-pagina">2</button>
+                    <button class="btn-pagina">3</button>
+                    <button class="btn-pagina"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p><i class="far fa-copyright"></i> Copyright 2025 SAGO Pinturas. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
