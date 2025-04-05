@@ -1,102 +1,172 @@
-
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contacto - SAGO Pinturas</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
 
     <!-- Hojas de estilo externas -->
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/home.css">
-    <link rel="stylesheet" href="css/contacto.css">
-    
-    <!-- Font Awesome para iconografía -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    
-    <!-- Google Fonts - Source Sans 3 -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
-</head>
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/contacto.css" />
 
-<body>
+    <!-- Font Awesome para iconografía -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <!-- Google Fonts - Source Sans 3 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="cont-principal">
     <!-- Banner superior - Ofertas destacadas -->
-    <div class="aviso-ofertas">
-        <i class="fas fa-fire-alt"></i>
-        <p>2 x 1 en Aerosoles Krylon, pagás el de mayor valor. </p>
-    </div>
 
     <!-- Encabezado principal -->
-    <header>
-        <!-- Barra de navegación superior: Logo, buscador y acciones de usuario -->
-        <div class="nav-topBar">
-            <div class="logo">
-                <a href="./index.html">
-                    <img src="./img/LOGO_SAGO.svg" alt="Logo SAGO Pinturas">
-                </a>
-            </div>
-
-            <div class="buscador">
-                <input type="search" placeholder="Buscar...">
-                <i class="fa fa-search" aria-hidden="true"></i>
-            </div>
-
-            <div class="iconos">
-                <i class="fal fa-heart"></i>
-                <a href="">Login</a>
-                <i class="far fa-shopping-cart"></i>
-            </div>
-        </div>
-
-        <!-- Menú de navegación principal -->
-        <nav class="nav-downBar">
-            <ul class="nav-downBar-container-items">
-                <li><a href="productos.html"><i class="fas fa-box"></i> Productos</a></li>
-                <li><a href="ofertas.html"><i class="fas fa-tag"></i> Ofertas</a></li>
-                <li><a href="inspiracion.html"><i class="fas fa-lightbulb"></i> Inspiración</a></li>
-                <li><a href="outlet.html"><i class="fas fa-percent"></i> Outlet</a></li>
-                <li><a href="servicios.html"><i class="fas fa-tools"></i> Servicios</a></li>
-                <li><a href="nosotros.html"><i class="fas fa-users"></i> Nosotros</a></li>
-                <li><a href="contacto.html" class="active"><i class="fas fa-envelope"></i> Contacto</a></li>
+    <header class="container-fluid bg-body-tertiary p-0">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="./img/LOGO_SAGO.svg" alt="" class="logo" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  aria-current="page"
+                  href="./index.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./productos.html">Productos</a>
+              </li>
+              <li class="nav-item">
+                <a href="./servicios.html" class="nav-link">Servicios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a href="./contacto.html" class="nav-link active">Contacto</a>
+              </li>
             </ul>
-        </nav>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Nombre del Producto"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Buscar
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
     </header>
 
-    <main class="container-md contenedor-formulario">
-        <form action="" class="row g-3">
-            <div class="col-md-6">
-                <label for="inputName4" class="form-label">Nombre</label>
-                <input type="text" class="form-control" id="inputName4">
-            </div>
-            <div class="col-md-6">
-                <label for="inputEmail4" class="form-label">Email</label>
-                <input type="email" class="form-control" id="inputEmail4">
-              </div>
-            <div class="col-md-6">
-                <label for="inputPhone4" class="form-label">Teléfono</label>
-                <input type="tel" class="form-control" id="inputPhone4">
-            </div>  
-            <div class="col-md-6">
-                <label for="inputSubject4" class="form-label">Asunto</label>
-                <input type="text" class="form-control" id="inputSubject4">
-            </div>
-            <div class="col-md-12">
-                <label for="inputMessage4" class="form-label">¿En qué podemos ayudarte?</label>
-                <textarea class="form-control" id="inputMessage4" rows="3"></textarea>
-            </div>
-            <div class="col-12">
-                <button type="submit" class="btn btn-primary justify-content-center">Enviar</button>
-            </div>
-        </form>
-        
+    <!-- Contenido principal -->
+
+    <main class="container-md contenedor-formulario rounded">
+      <!-- Nueva sección de datos de contacto -->
+
+      <!-- Formulario de contacto -->
+      <form action="" class="row g-3 px-2">
+        <h2 class="text-center display-5 fw-bold text-shadow text-light">
+          Contacto
+        </h2>
+        <p class="text-center text-light fw-bold text-shadow">
+          Completá el formulario y uno de nuestros vendedores te contactará
+          pronto para ayudarte.
+        </p>
+        <div class="col-md-6">
+          <input
+            type="text"
+            class="form-control"
+            id="inputName4"
+            placeholder="Nombre"
+          />
+        </div>
+        <div class="col-md-6">
+          <input
+            type="email"
+            class="form-control"
+            id="inputEmail4"
+            placeholder="Email"
+          />
+        </div>
+        <div class="col-md-6">
+          <input
+            type="tel"
+            class="form-control"
+            id="inputPhone4"
+            placeholder="Teléfono"
+          />
+        </div>
+        <div class="col-md-6">
+          <input
+            type="text"
+            class="form-control"
+            id="inputSubject4"
+            placeholder="Asunto"
+          />
+        </div>
+        <div class="col-md-12">
+          <textarea
+            class="form-control"
+            id="inputMessage4"
+            rows="3"
+            placeholder="¿Cuál es tu consulta?"
+          ></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </form>
     </main>
-    
 
     <!-- Pie de página -->
     <footer>
-        <p><i class="far fa-copyright"></i> Copyright 2025 SAGO Pinturas. Todos los derechos reservados.</p>
+      <p>
+        <i class="far fa-copyright"></i> Copyright 2025 SAGO Pinturas. Todos los
+        derechos reservados.
+      </p>
     </footer>
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

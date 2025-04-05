@@ -20,6 +20,10 @@
   --bg-300: #cccccc;
 }
 
+.img-carrousel{
+  max-height: 350px;
+  object-fit: cover;
+}
 
 .contenido-principal{
   display: flex;
@@ -92,7 +96,7 @@
   grid-template-columns: repeat(4, 1fr);
   column-gap: 10px;
   padding: 20px 20px;
-  background-color: #cccccc;
+  
 }
 
 .categorias article{
@@ -105,6 +109,8 @@
   border-radius: 10px;
   cursor: pointer;
   p{
+    margin:0;
+    padding: 0;;
     font-size: 1.5rem;
     font-weight: 600;
     color: #ffffff;
