@@ -1,0 +1,15 @@
+.container__img{
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-services{
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+}
