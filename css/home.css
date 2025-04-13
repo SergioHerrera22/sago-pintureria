@@ -79,14 +79,12 @@
   background-color: var(--primary-100);
   transition: 0.5s;
 }
-
-.categorias {
-  padding: 15px 15px;
+.categorias{
+  padding: 20px;
 }
 
-.categorias article {
-  background-color: var(--accent-100);
-  padding: 20px 30px;
+ .categorias article{
+  padding: 15px 15px;
   text-align: center;
   display: flex;
   justify-content: space-around;
@@ -94,14 +92,16 @@
   border-radius: 10px;
   cursor: pointer;
 }
+
+
 .categorias article p {
   margin: 0;
   padding: 0;
-  font-size: 1.5rem;
+  font-size: 25px;
   font-weight: 600;
   color: #ffffff;
   text-shadow: 0px 0px 8px #000000;
-}
+} 
 
 .categorias .categorias-herramientas {
   background-image: url("../img/herramientas.svg");
@@ -139,10 +139,7 @@
   transition: 0.4s;
 }
 
-.nuevos-productos {
-  margin-top: 20px;
-  padding: 20px 20px;
-}
+
 
 .nuevos-productos .title {
   display: flex;
@@ -414,10 +411,10 @@
   transition: transform 0.3s ease;
 }
 .testimonials-header {
+  margin-top: 30px;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-  margin-bottom: 30px;
+  justify-content: center;
 }
 
 .testimonials-title {
@@ -486,7 +483,7 @@
   padding: 20px;
 }
 .promo-box {
-  background-color: #cccccc71;
+  background-color: #9c9c9c90;
   width: 30%;
   padding: 10px;
   color: var(--secondary-100);
@@ -551,6 +548,10 @@ footer {
   align-self: center;
 }
 
+@media (min-width: 768px) {
+  
+}
+  
 @media (max-width: 768px) {
   .testimonials {
     display: flex;
@@ -558,4 +559,25 @@ footer {
     padding: 20px;
     flex-direction: column;
   }
+  .contenedor-box {
+    flex-direction: column;
+    align-items: center;
+  }
+  .promo-box {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .promo-box h2 {
+    font-size: 24px;
+  }
+  .promo-box .porcentaje-descuento h1 {
+    font-size: 48px;
+  }
+  .promo-box .porcentaje-descuento p {
+    font-size: 16px;
+  }
+  .promo-box a {
+    font-size: 14px;
+  }
+ 
 }
