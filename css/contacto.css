@@ -10,8 +10,11 @@ input, textarea, button {
   }
   
 .contenedor-formulario{
+    width: 90%;
+    padding: 20px;
    background-color: #655e5e81;
    margin: 20px auto;
+   display: flex;
     
 }
 @media (min-width:768px){
