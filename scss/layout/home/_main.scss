@@ -1,0 +1,55 @@
+.img-carrousel {
+  max-height: 350px;
+  object-fit: cover;
+}
+
+.contenido-principal {
+  @include flexColumn;
+}
+
+
+// Categorías
+
+@import "./categorias";
+@import "./promoBox";
+@import "./testimonials";
+@import '../footer';
+
+//Responsive Design
+@media (max-width: 768px) {
+  .testimonials {
+    @include flexColumn;
+    gap: 10px;
+    padding: 20px;
+  }
+
+  .contenedor-box {
+    @include flexColumnCenter;
+  }
+
+  .promo-box {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .promo-box {
+    a {
+      @include reset;
+      font-size: 14px;
+    }
+
+    h2 {
+      font-size: 24px;
+    }
+
+    .porcentaje-descuento {
+      h1 {
+        font-size: 48px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+    }
+  }
+}
