@@ -1,3 +1,6 @@
+@use "../../utils/mixins";
+@use "../../utils/variables";
+
 input,
 textarea,
 button {
@@ -7,7 +10,7 @@ button {
 input:focus,
 textarea:focus {
     outline: none;
-    border-color: $primary-100;
+    border-color: variables.$primary-100;
 }
 
 .contenedor-formulario {
@@ -20,7 +23,7 @@ textarea:focus {
 }
 
 .cont-principal {
-    @include backgroundImage("../img/empty-industrial-room-interior-design.jpg");
+    @include mixins.backgroundImage("../img/empty-industrial-room-interior-design.jpg");
 }
 
 

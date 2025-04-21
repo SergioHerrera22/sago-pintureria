@@ -1,40 +1,53 @@
+@use "sass:meta";
+@use "../../utils/mixins";
+
 .img-carrousel {
   max-height: 350px;
   object-fit: cover;
 }
 
+.carrousel-title {
+  @include mixins.textStyle(var(--text-100), 40px, 700, center, normal, normal, 0px 0px 8px #3c3b3b);
+
+}
+
+.carrousel-description {
+  @include mixins.textStyle(var(--text-100), 20px, 400, center, normal, normal, 0px 0px 10px #000000);
+}
+
 .contenido-principal {
-  @include flexColumn;
+  @include mixins.flexColumn;
 }
 
 
 // Categorías
 
-@import "./categorias";
-@import "./promoBox";
-@import "./testimonials";
-@import '../footer';
+@include meta.load-css("categorias");
+@include meta.load-css("promoBox");
+@include meta.load-css("testimonials");
+@include meta.load-css('../footer');
 
 //Responsive Design
 @media (max-width: 768px) {
   .testimonials {
-    @include flexColumn;
+    @include mixins.flexColumn;
     gap: 10px;
     padding: 20px;
   }
 
   .contenedor-box {
-    @include flexColumnCenter;
+    @include mixins.flexColumnCenter;
   }
 
   .promo-box {
     width: 100%;
     margin-bottom: 20px;
+
   }
 
   .promo-box {
     a {
-      @include reset;
+      @include mixins.reset;
       font-size: 14px;
     }
 
@@ -49,6 +62,7 @@
 
       p {
         font-size: 16px;
+
       }
     }
   }

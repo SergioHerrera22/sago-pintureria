@@ -1,9 +1,11 @@
+@use "../../utils/mixins";
+
 .container__img {
     width: 140px;
     height: 140px;
     border-radius: 50%;
     background-color: #f8f8f8;
-    @include flexCenter;
+    @include mixins.flexCenter;
 }
 
 .img-services {
@@ -41,10 +43,10 @@ h2 {
 }
 
 .btn-primary {
-    @include btnStyle(#1f4e79, 'transparent', #fff);
+    @include mixins.btnStyle(#1f4e79, 'transparent', #fff);
 
     &:hover {
-        @include btnStyle(#163b5a, 'transparent', #fff);
+        @include mixins.btnStyle(#163b5a, 'transparent', #fff);
 
     }
 

@@ -1,3 +1,7 @@
+@use "../utils/variables";
+
+// Description: Typography styles
+
 * {
-    font-family: $fontfamily;
+    font-family: variables.$fontfamily;
 }

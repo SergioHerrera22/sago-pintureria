@@ -1,3 +1,5 @@
+@use "../../utils/mixins";
+
 body {
     background-color: #f0f0f0;
 }
@@ -25,7 +27,7 @@ body {
 .container-img {
     width: 100%;
     height: 166px;
-    @include flexCenter;
+    @include mixins.flexCenter;
 
 }
 

@@ -1,46 +1,49 @@
+@use "../../utils/mixins";
+@use "../../utils/variables";
+
 .contenedor-box {
-  @include backgroundImage("../img/fondo-1.jpg");
-  @include flexCenter;
+  @include mixins.backgroundImage("../img/fondo-1.jpg");
+  @include mixins.flexCenter;
   gap: 10px;
   padding: 20px;
 
   .promo-box {
-    @include flexColumnCenter;
+    @include mixins.flexColumnCenter;
     align-items: flex-start;
     align-self: center;
     background-color: #9c9c9c90;
     width: 30%;
     padding: 10px;
-    color: $secondary-100;
+    color: variables.$secondary-100;
     border-radius: 10px;
 
     gap: 10px;
 
     h2 {
-      @include textStyle(#ffffff, 32px, 800, left, normal, normal, 0px 0px 8px #000000);
+      @include mixins.textStyle(#ffffff, 32px, 800, left, normal, normal, 0px 0px 8px #000000);
 
     }
 
     .upto {
-      @include textStyle(#7a7a7a, 14px, 600, left, 1.3);
+      @include mixins.textStyle(#7a7a7a, 14px, 600, left, 1.3);
     }
 
     .porcentaje-descuento {
       h1 {
-        @include textStyle(#444444, 72px, 800, left, 1.3, 2px);
+        @include mixins.textStyle(#444444, 72px, 800, left, 1.3, 2px);
       }
 
       p {
-        @include textStyle($bg-100, 18px, 500, left, 1.3, normal, 0px 0px 8px #000000);
+        @include mixins.textStyle(variables.$bg-100, 18px, 500, left, 1.3, normal, 0px 0px 8px #000000);
       }
     }
 
     a {
-      @include textStyle($text-100, 16px, 600, center, 1.3);
+      @include mixins.textStyle(variables.$text-100, 16px, 600, center, 1.3);
 
       text-decoration: none;
       padding: 10px;
-      background-color: $secondary-100;
+      background-color: variables.$secondary-100;
       border-radius: 5px;
     }
   }

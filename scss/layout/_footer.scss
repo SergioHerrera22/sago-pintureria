@@ -1,5 +1,8 @@
+@use "../utils/mixins";
+@use "../utils/variables";
+
 footer {
-    @include textStyle(var(--text-100),
+    @include mixins.textStyle(var(--text-100),
         16px,
         600,
         center,
@@ -7,7 +10,7 @@ footer {
         normal,
         none);
     padding: 25px;
-    background-color: $primary-200;
+    background-color: variables.$primary-200;
     color: #cccccc;
     align-self: center;
 }

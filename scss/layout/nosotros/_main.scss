@@ -1,15 +1,17 @@
+@use "../../utils/mixins";
+
 p {
     font-size: 1.2rem;
-    @include reset;
+    @include mixins.reset;
 }
 
 .about-section {
     max-height: 400px;
-    @include flexCenter;
+    @include mixins.flexCenter;
 }
 
 .container__logo {
-    @include flexCenter;
+    @include mixins.flexCenter;
 }
 
 h1,
@@ -18,7 +20,7 @@ h2 {
 }
 
 .section {
-    @include flexCenter;
+    @include mixins.flexCenter;
     flex-direction: column-reverse;
     background-color: #f8f9fa;
     padding: 2rem 1rem;
@@ -40,11 +42,11 @@ h2 {
 }
 
 .btn-primary {
-    @include btnStyle(#3c87cd, #1f4e79, #fff);
+    @include mixins.btnStyle(#3c87cd, #1f4e79, #fff);
 
     &:hover {
 
-        @include btnStyle(#163b5a, #163b5a, #fff);
+        @include mixins.btnStyle(#163b5a, #163b5a, #fff);
     }
 
 }
@@ -53,11 +55,11 @@ h2 {
 
 .container-img-logo {
     max-height: 300px;
-    @include flexCenter;
+    @include mixins.flexCenter;
 }
 
 .content-header {
-    @include flexColumnCenter;
+    @include mixins.flexColumnCenter;
     text-align: center;
     gap: 20px;
     padding: 20px;
@@ -75,7 +77,7 @@ h2 {
 
 @media (max-width: 1024px) {
     .about-section {
-        @include flexColumn;
+        @include mixins.flexColumn;
         max-height: none;
     }
 

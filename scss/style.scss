@@ -1,10 +1,10 @@
-@import "./utils/variables";
-@import './utils/mixins';
-@import './base/typography';
+@use "utils/variables";
+@use "utils/mixins";
+@use "base/typography";
 
-@import './pages/index.scss';
+@use "pages/index.scss";
 
-@import './pages/productos';
-@import './pages/servicios';
-@import './pages/nosotros';
-@import './pages/contacto';
+@use "pages/productos";
+@use "pages/servicios";
+@use "pages/nosotros";
+@use "pages/contacto";

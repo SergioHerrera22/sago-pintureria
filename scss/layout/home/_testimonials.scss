@@ -1,17 +1,20 @@
+@use "../../utils/mixins";
+@use "../../utils/variables";
+
 .testimonials-header {
   margin-top: 30px;
-  @include flexCenter;
+  @include mixins.flexCenter;
 
   .testimonials-title {
 
-    @include textStyle(#444, 2rem,
+    @include mixins.textStyle(#444, 2rem,
       bold,
       center,
       normal,
       normal,
       none);
     margin-left: 10px;
-    @include flexCenter;
+    @include mixins.flexCenter;
   }
 
   i {
@@ -31,7 +34,7 @@
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-    @include flexColumnCenter;
+    @include mixins.flexColumnCenter;
     gap: 15px;
     transition: transform 0.3s ease;
 
@@ -45,10 +48,10 @@
       height: 80px;
       border-radius: 50%;
       overflow: hidden;
-      border: 3px solid $primary-100;
+      border: 3px solid variables.$primary-100;
 
       img {
-        @include imgCover;
+        @include mixins.imgCover;
       }
 
     }
@@ -59,11 +62,11 @@
       .fa-quote-left,
       .fa-quote-right {
         font-size: 0.8rem;
-        color: $primary-100;
+        color: variables.$primary-100;
       }
 
       blockquote {
-        color: $text-100;
+        color: variables.$text-100;
         font-style: italic;
         margin: 10px 0;
         line-height: 1.6;
@@ -71,7 +74,7 @@
     }
 
     .testimonial-author {
-      color: $primary-100;
+      color: variables.$primary-100;
       font-weight: 600;
       margin-top: 10px;
     }
