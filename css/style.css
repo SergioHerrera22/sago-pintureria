@@ -37,28 +37,28 @@
 }
 
 .categorias .categorias-herramientas {
-  background-image: url(/img/herramientas.svg);
+  background-image: url(../img/herramientas.svg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 .categorias .categorias-pinturas {
-  background-image: url(/img/pinturas.svg);
+  background-image: url(../img/pinturas.svg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 .categorias .categorias-revestimientos {
-  background-image: url(/img/revestimientos.svg);
+  background-image: url(../img/revestimientos.svg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 .categorias .categorias-accesorios {
-  background-image: url(/img/accesorios.svg);
+  background-image: url(../img/accesorios.svg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
