@@ -439,11 +439,13 @@ body {
   font-weight: bold;
 }
 
-.card-text {
+.card-text,
+.card-text-description {
   font-size: 14px;
   color: #666;
 }
-.card-text .text-detail {
+.card-text .text-detail,
+.card-text-description .text-detail {
   font-size: 12px;
   color: #999;
 }
