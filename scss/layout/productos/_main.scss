@@ -54,6 +54,7 @@ body {
     overflow: hidden;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
     background-color: #fff;
+
 }
 
 .card-body {
@@ -62,5 +63,76 @@ body {
 
     p {
         text-align: justify;
+    }
+}
+
+.btn-cart {
+
+    transition: all 0.3s ease;
+    display: inline-block;
+    user-select: none;
+    position: relative;
+    text-align: center;
+}
+
+
+/* Texto "Agregado" oculto por defecto */
+.texto-agregado {
+    display: none;
+}
+
+/* Cuando el checkbox está marcado: cambiar color y texto */
+.add-check:checked+.btn-cart {
+
+    /* Verde */
+    color: #fff;
+}
+
+/* Mostrar ✔ Agregado y ocultar texto original */
+.add-check:checked+.btn-cart .texto-original {
+    display: none;
+}
+
+.add-check:checked+.btn-cart .texto-agregado {
+    display: inline;
+}
+
+
+.slide-fwd-top:hover {
+    animation: slide-fwd-top 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.scale-in-bottom {
+
+    animation: scale-in-bottom .5s cubic-bezier(.25, .46, .45, .94) both;
+}
+
+.shadow-drop-2-bottom:hover {
+    animation: shadow-drop-2-bottom .4s cubic-bezier(.25, .46, .45, .94) both;
+}
+
+@keyframes shadow-drop-2-bottom {
+    0% {
+        -webkit-transform: translateZ(0) translateY(0);
+        transform: translateZ(0) translateY(0);
+        -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+
+    100% {
+        -webkit-transform: translateZ(25px) translateY(-5px);
+        transform: translateZ(25px) translateY(-5px);
+        -webkit-box-shadow: 0 12px 20px -12px rgba(0, 0, 0, 0.707);
+        box-shadow: 0 12px 20px -12px rgba(0, 0, 0, 0.707);
+    }
+}
+
+@keyframes slide-fwd-top {
+    0% {
+        transform: translateZ(0) translateY(0);
+    }
+
+    100% {
+        transform: translateY(-20px);
     }
 }

@@ -29,6 +29,8 @@
   gap: 10px;
   padding: 20px;
 
+  perspective: 1000px;
+
   .testimonial {
     background: white;
     padding: 20px;
@@ -36,12 +38,8 @@
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
     @include mixins.flexColumnCenter;
     gap: 15px;
-    transition: transform 0.3s ease;
 
-    &:hover {
-      transform: translateY(-5px);
-    }
-
+    cursor: pointer;
 
     .testimonial-image {
       width: 80px;
@@ -78,5 +76,19 @@
       font-weight: 600;
       margin-top: 10px;
     }
+  }
+}
+
+.slide-fwd-top:hover {
+  animation: slide-fwd-top 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes slide-fwd-top {
+  0% {
+    transform: translateZ(0) translateY(0);
+  }
+
+  100% {
+    transform: translateY(-20px);
   }
 }

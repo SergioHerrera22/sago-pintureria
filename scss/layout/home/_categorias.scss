@@ -4,19 +4,19 @@
   padding: 20px;
 
   .categorias-herramientas {
-    @include mixins.backgroundImage("/img/herramientas.svg");
+    @include mixins.backgroundImage("../img/herramientas.jpg");
   }
 
   .categorias-pinturas {
-    @include mixins.backgroundImage("/img/pinturas.svg");
+    @include mixins.backgroundImage("../img/pinturas.jpg");
   }
 
   .categorias-revestimientos {
-    @include mixins.backgroundImage("/img/revestimientos.svg");
+    @include mixins.backgroundImage("../img/revestimientos.jpg");
   }
 
   .categorias-accesorios {
-    @include mixins.backgroundImage("/img/accesorios.svg");
+    @include mixins.backgroundImage("../img/accesorios.jpg");
   }
 
   .categorias-herramientas:hover,
