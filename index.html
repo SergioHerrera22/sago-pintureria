@@ -30,6 +30,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
 
     <!-- Google Fonts - Source Sans 3 -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -223,11 +227,11 @@
           <h2 class="text-center mb-4">Nuevos productos</h2>
           <div class="row g-4">
             <!-- Producto 1 -->
-            <div class="col-12 col-sm-6 col-lg-3">
+            <div class="col-12 col-sm-6 col-lg-3 scale-in-bottom">
               <div
                 class="card-body text-center d-flex flex-column align-items-center p-0"
               >
-                <div class="card product-card text-center">
+                <div class="card product-card shadow-drop-2-bottom text-center">
                   <div class="container-img">
                     <img
                       src="img/products/atermico.jpg"
@@ -279,11 +283,11 @@
               </div>
             </div>
             <!-- Producto 2 -->
-            <div class="col-12 col-sm-6 col-lg-3">
+            <div class="col-12 col-sm-6 col-lg-3 scale-in-bottom">
               <div
                 class="card-body text-center d-flex flex-column align-items-center p-0"
               >
-                <div class="card product-card text-center">
+                <div class="card product-card shadow-drop-2-bottom text-center">
                   <div class="container-img">
                     <img
                       src="img/products/acrilpalst.jpg"
@@ -335,11 +339,11 @@
               </div>
             </div>
             <!-- Producto 3 -->
-            <div class="col-12 col-sm-6 col-lg-3">
+            <div class="col-12 col-sm-6 col-lg-3 scale-in-bottom">
               <div
                 class="card-body text-center d-flex flex-column align-items-center p-0"
               >
-                <div class="card product-card text-center">
+                <div class="card product-card shadow-drop-2-bottom text-center">
                   <div class="container-img">
                     <img
                       src="img/products/brilloplastSR.jpg"
@@ -393,11 +397,11 @@
               </div>
             </div>
             <!-- Producto 4 -->
-            <div class="col-12 col-sm-6 col-lg-3">
+            <div class="col-12 col-sm-6 col-lg-3 scale-in-bottom">
               <div
                 class="card-body text-center d-flex flex-column align-items-center p-0"
               >
-                <div class="card product-card text-center">
+                <div class="card product-card shadow-drop-2-bottom text-center">
                   <div class="container-img">
                     <img
                       src="img/products/cielorraso.jpg"
@@ -452,34 +456,125 @@
         </div>
       </section>
 
-      <!-- Sección de promociones especiales -->
-      <div class="container contenedor-box">
-        <section data-aos="fade-right" class="promo-box">
-          <h2><i class="fas fa-tags"></i> Ofertas</h2>
+      <!-- Sección de preguntas frecuentes -->
+      <div class="container mt-4 p-2">
+        <h2 class="text-center mb-4 preguntas_frecuentes-text">
+          <i class="bi bi-patch-question"></i>
+          Preguntas frecuentes
+        </h2>
 
-          <span>
-            <p class="upto">OFF</p>
-            <span class="porcentaje-descuento">
-              <h1>50%</h1>
-              <p>Descuento en Latex King Interior/Exterior.</p>
-            </span>
-          </span>
-
-          <a href="#" class="heartbeat">Ver más</a>
-        </section>
-        <section data-aos="fade-left" class="promo-box">
-          <h2><i class="fas fa-tags"></i> Ofertas</h2>
-
-          <span>
-            <p class="upto">OFF</p>
-            <span class="porcentaje-descuento">
-              <h1>25%</h1>
-              <p>Descuento en todos nuestros productos, pagando en Efectivo.</p>
-            </span>
-          </span>
-
-          <a href="#" class="heartbeat">Ver más</a>
-        </section>
+        <div
+          class="accordion accordion-flush d-flex flex-column gap-3"
+          id="accordionFlushExample"
+        >
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseOne"
+                aria-expanded="false"
+                aria-controls="flush-collapseOne"
+              >
+                ¿De qué color debería pintar mi habitación o casa?
+              </button>
+            </h2>
+            <div
+              id="flush-collapseOne"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                La elección del color depende del tipo de habitación y del
+                ambiente que se desea crear. Por ejemplo, los colores claros y
+                etéreos son ideales para dormitorios o baños, ya que ayudan a
+                ampliar el espacio. En cocinas, se prefieren tonos tierra para
+                una sensación de paz y tranquilidad.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseTwo"
+                aria-expanded="false"
+                aria-controls="flush-collapseTwo"
+              >
+                ¿Cuánta pintura necesito para mi proyecto?
+              </button>
+            </h2>
+            <div
+              id="flush-collapseTwo"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                La cantidad de pintura necesaria depende del área a cubrir y de
+                las características de la superficie. Por ejemplo, las
+                superficies texturizadas requieren más pintura que las lisas.
+                Además, si se realiza un cambio de color significativo, como de
+                oscuro a claro, puede ser necesario aplicar más capas.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseThree"
+                aria-expanded="false"
+                aria-controls="flush-collapseThree"
+              >
+                ¿Qué tipo de pintura debo usar para cada superficie?
+              </button>
+            </h2>
+            <div
+              id="flush-collapseThree"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                Existen diferentes tipos de pintura según la superficie y el
+                acabado deseado. Por ejemplo, la pintura plástica es común para
+                interiores, mientras que el esmalte sintético se utiliza para
+                metales y maderas. Es importante elegir la pintura adecuada para
+                garantizar durabilidad y un buen acabado.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseFour"
+                aria-expanded="false"
+                aria-controls="flush-collapseFour"
+              >
+                ¿Cuántas manos de pintura son necesarias?
+              </button>
+            </h2>
+            <div
+              id="flush-collapseFour"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                El número de manos de pintura necesarias depende del color
+                anterior y del nuevo color. Si se cambia de un color oscuro a
+                uno claro, puede ser necesario aplicar una mano de blanco antes
+                para ahorrar pintura y lograr un acabado uniforme.
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
       <!-- Sección de testimonios -->

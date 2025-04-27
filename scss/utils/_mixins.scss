@@ -69,3 +69,7 @@
     padding: $padding;
     border-radius: $borderRadius;
 }
+
+@mixin transition($property: all, $duration: 0.3s, $ease: ease-in-out) {
+    transition: $property $duration $ease;
+}
