@@ -1,34 +1,70 @@
-# Pinturería ColorMax Website
+# SAGO Pinturería
 
-Sitio web moderno y responsive para una pinturería, desarrollado con HTML y CSS puro.
+Bienvenido al sitio web de **SAGO Pinturería**, una tienda online dedicada a la venta de pinturas, revestimientos y productos relacionados.  
+Este proyecto es parte de mi formación como **Desarrollador Full Stack** en Coderhouse.
 
-## Estructura del Proyecto
+## 🌟 Características principales
 
-- `index.html` - Página principal
-- `productos.html` - Catálogo de productos
-- `servicios.html` - Servicios ofrecidos
-- `nosotros.html` - Información sobre la empresa
-- `contacto.html` - Formulario de contacto e información
+- Carrusel de imágenes destacadas.
+- Secciones de categorías de productos.
+- Presentación de productos nuevos y promociones.
+- Diseño responsivo adaptable a dispositivos móviles.
+- Estructura basada en **HTML5** y **CSS3**.
+- Utilización de **Bootstrap** para componentes como el carrusel y modales.
+- Implementación de Sass en todo el proyecto, para manejar los estilos.
 
-### Estructura CSS
+## 🚀 Tecnologías utilizadas
 
-- `css/base.css` - Estilos base y componentes comunes
-- `css/home.css` - Estilos específicos de la página principal
-- `css/productos.css` - Estilos de la sección de productos
-- `css/servicios.css` - Estilos de la sección de servicios
-- `css/nosotros.css` - Estilos de la sección Nosotros
-- `css/contacto.css` - Estilos del formulario de contacto
+- HTML5
+- CSS3
+- Bootstrap 5
+- Sass
 
-## Características
+## 📁 Estructura del proyecto
 
-- Diseño responsive
-- CSS modular y mantenible
-- Sin dependencias externas
-- Optimizado para rendimiento
-- Interfaz moderna y amigable
+```plaintext
+sago-pintureria/
+├── index.html
+├── css/
+│   └── home.css
+├── img/
+│   ├── carrusel/
+│   │   ├── carrusel1.jpg
+│   │   ├── carrusel2.jpg
+│   │   └── carrusel3.jpg
+│   ├── categorias/
+│   │   ├── categoria1.jpg
+│   │   ├── categoria2.jpg
+│   │   └── categoria3.jpg
+│   ├── productos/
+│   │   ├── producto1.jpg
+│   │   ├── producto2.jpg
+│   │   └── producto3.jpg
+│   └── promociones/
+│       ├── promo1.jpg
+│       ├── promo2.jpg
+│       └── promo3.jpg
+└── README.md
 
-## Cómo usar
 
-1. Clona el repositorio
-2. Abre `index.html` en tu navegador
-3. Navega por las diferentes secciones
+## 📌 Estado del proyecto
+
+Actualmente está en desarrollo.
+Próximas mejoras planificadas:
+- Integración de funcionalidades dinámicas con **JavaScript**.
+- Implementación de carrito de compras.
+
+## 📷 Vista previa
+
+Accedé a la web aquí 👉 [SAGO Pinturería](https://sergioherrera22.github.io/sago-pintureria/)
+
+## 👨‍💻 Autor
+
+**Sergio Herrera**
+
+- 📧 Email: santiherreragauna@gmail.com
+
+---
+
+¡Gracias por visitar el proyecto! 🎨✨
+```
