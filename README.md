@@ -45,7 +45,7 @@ sago-pintureria/
 │       ├── promo2.jpg
 │       └── promo3.jpg
 └── README.md
-
+```
 
 ## 📌 Estado del proyecto
 
