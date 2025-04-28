@@ -67,4 +67,4 @@ Accedé a la web aquí 👉 [SAGO Pinturería](https://sergioherrera22.github.io
 ---
 
 ¡Gracias por visitar el proyecto! 🎨✨
-```
+
