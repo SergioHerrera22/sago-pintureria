@@ -4,24 +4,35 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home - SAGO Pinturas</title>
+    <meta
+      name="description"
+      content="Descubrí productos Sinteplast, impermeabilizantes, sintéticos y más en SAGO Pinturas. Calidad, precio y promociones exclusivas."
+    />
+    <meta
+      name="keywords"
+      content="pinturas, sinteplast, impermeabilizantes, sintético, pintura hogar, sago, sago pinturas, latex, esmalte, promoción pintura"
+    />
+    <meta name="author" content="SAGO Pinturas" />
+    <title>SAGO Pinturas | Tienda de pinturas, impermeabilizantes y más</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <!-- Hojas de estilo externas -->
-    <link rel="stylesheet" href="css/base.css" />
-    <link rel="stylesheet" href="css/home.css" />
-    <link rel="stylesheet" href="css/contacto.css" />
-    <link rel="stylesheet" href="css/productos.css" />
+    <link rel="stylesheet" href="css/style.css" />
 
     <!-- Font Awesome para iconografía -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+      rel="stylesheet"
     />
 
     <!-- Google Fonts - Source Sans 3 -->
@@ -71,16 +82,16 @@
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./productos.html">Productos</a>
+                <a class="nav-link" href="./pages/productos.html">Productos</a>
               </li>
               <li class="nav-item">
-                <a href="./servicios.html" class="nav-link">Servicios</a>
+                <a href="./pages/servicios.html" class="nav-link">Servicios</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./nosotros.html">Nosotros</a>
+                <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
               </li>
               <li class="nav-item">
-                <a href="./contacto.html" class="nav-link">Contacto</a>
+                <a href="./pages/contacto.html" class="nav-link">Contacto</a>
               </li>
             </ul>
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
@@ -132,8 +143,12 @@
               alt="..."
             />
             <div class="carousel-caption d-none d-md-block">
-              <h5>ELIGE EL COLOR PERFECTO PARA TU REVESTIMIENTO EXTERIOR</h5>
-              <p>Con Colorin Travertino Rulato, tus ideas se hacen realidad.</p>
+              <h5 class="carrousel-title">
+                ELIGE EL COLOR PERFECTO PARA TU REVESTIMIENTO EXTERIOR
+              </h5>
+              <p class="carrousel-description">
+                Con Colorin Travertino Rulato, tus ideas se hacen realidad.
+              </p>
             </div>
           </div>
           <div class="carousel-item">
@@ -143,8 +158,8 @@
               alt="..."
             />
             <div class="carousel-caption d-none d-md-block">
-              <h5>Pintura automotriz</h5>
-              <p>
+              <h5 class="carrousel-title">Pintura automotriz</h5>
+              <p class="carrousel-description">
                 En nuestro local encontrarás la mejor calidad de pintura para tu
                 auto.
               </p>
@@ -157,8 +172,8 @@
               alt="..."
             />
             <div class="carousel-caption d-none d-md-block">
-              <h5>El color para tu hogar</h5>
-              <p>
+              <h5 class="carrousel-title">El color para tu hogar</h5>
+              <p class="carrousel-description">
                 Ven por nuestro local, elige el color y el producto que mejor se
                 adapte a tus necesidades
               </p>
@@ -187,21 +202,21 @@
 
       <!-- Sección de categorías principales -->
       <section class="categorias container">
-        <div class="row gap-1 d-flex justify-content-around">
+        <div class="row gap-2 d-flex justify-content-around">
           <article class="col text-center categorias-accesorios">
-            <a href="productos.html"> Accesorios </a>
+            <a href="/productos.html"> Accesorios </a>
           </article>
 
           <article class="col text-center categorias-pinturas">
-            <a href="productos.html"> Pinturas</a>
+            <a href="/productos.html"> Pinturas</a>
           </article>
 
           <article class="col text-center categorias-revestimientos">
-            <a href="productos.html"> Revestimientos</a>
+            <a href="/productos.html"> Revestimientos</a>
           </article>
 
           <article class="col text-center categorias-herramientas">
-            <a href="productos.html"> Herramientas</a>
+            <a href="/productos.html"> Herramientas</a>
           </article>
         </div>
       </section>
@@ -212,11 +227,11 @@
           <h2 class="text-center mb-4">Nuevos productos</h2>
           <div class="row g-4">
             <!-- Producto 1 -->
-            <div class="col-12 col-sm-6 col-lg-3">
+            <div class="col-12 col-sm-6 col-lg-3 scale-in-bottom">
               <div
                 class="card-body text-center d-flex flex-column align-items-center p-0"
               >
-                <div class="card product-card text-center">
+                <div class="card product-card shadow-drop-2-bottom text-center">
                   <div class="container-img">
                     <img
                       src="img/products/atermico.jpg"
@@ -227,7 +242,7 @@
                   <div class="card-body">
                     <h5 class="card-title">RECUPLAST ATÉRMICO</h5>
                     <div class="card-body">
-                      <p class="card-text">
+                      <p class="card-text-description">
                         Su fórmula con microesferas de vidrio refleja más del
                         80% de los rayos solares, reduciendo la temperatura
                         interior y ahorrando energía eléctrica.
@@ -246,20 +261,33 @@
                       class="card-footer d-flex flex-column justify-content-around align-items-center gap-2"
                     >
                       <span class="card-price fw-bold"> $48.500 </span>
-                      <button type="button" class="btn btn-primary btn-sm">
-                        Agregar al carrito
-                      </button>
+                      <input
+                        type="checkbox"
+                        id="add1"
+                        class="add-check"
+                        hidden
+                      />
+                      <label for="add1" class="btn-cart">
+                        <span
+                          class="texto-original btn btn-primary btn-sm btn-cart"
+                          >Agregar al carrito</span
+                        >
+                        <span
+                          class="texto-agregado btn btn-success btn-sm btn-cart"
+                          >✔ Agregado</span
+                        >
+                      </label>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
             <!-- Producto 2 -->
-            <div class="col-12 col-sm-6 col-lg-3">
+            <div class="col-12 col-sm-6 col-lg-3 scale-in-bottom">
               <div
                 class="card-body text-center d-flex flex-column align-items-center p-0"
               >
-                <div class="card product-card text-center">
+                <div class="card product-card shadow-drop-2-bottom text-center">
                   <div class="container-img">
                     <img
                       src="img/products/acrilpalst.jpg"
@@ -270,7 +298,7 @@
                   <div class="card-body">
                     <h5 class="card-title">ACRILPLAST I/E</h5>
                     <div class="card-body">
-                      <p class="card-text">
+                      <p class="card-text-description">
                         Es un látex de uso interior y exterior que proporciona
                         un acabado mate homogéneo, resistente a la intemperie ,
                         a los lavados y gran poder cubritivo.
@@ -289,20 +317,33 @@
                       class="card-footer d-flex flex-column justify-content-around align-items-center gap-2"
                     >
                       <span class="card-price fw-bold"> $44.500 </span>
-                      <button type="button" class="btn btn-primary btn-sm">
-                        Agregar al carrito
-                      </button>
+                      <input
+                        type="checkbox"
+                        id="add2"
+                        class="add-check"
+                        hidden
+                      />
+                      <label for="add2" class="btn-cart">
+                        <span
+                          class="texto-original btn btn-primary btn-sm btn-cart"
+                          >Agregar al carrito</span
+                        >
+                        <span
+                          class="texto-agregado btn btn-success btn-sm btn-cart"
+                          >✔ Agregado</span
+                        >
+                      </label>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
             <!-- Producto 3 -->
-            <div class="col-12 col-sm-6 col-lg-3">
+            <div class="col-12 col-sm-6 col-lg-3 scale-in-bottom">
               <div
                 class="card-body text-center d-flex flex-column align-items-center p-0"
               >
-                <div class="card product-card text-center">
+                <div class="card product-card shadow-drop-2-bottom text-center">
                   <div class="container-img">
                     <img
                       src="img/products/brilloplastSR.jpg"
@@ -313,7 +354,7 @@
                   <div class="card-body">
                     <h5 class="card-title">BRILLOPLAST S/R</h5>
                     <div class="card-body">
-                      <p class="card-text">
+                      <p class="card-text-description">
                         Esmalte sintético de secado rápido, de gran brillo y
                         resistencia a la intemperie. Ideal para la protección y
                         decoración de metal y madera.
@@ -334,20 +375,33 @@
                       class="card-footer d-flex flex-column justify-content-around align-items-center gap-2"
                     >
                       <span class="card-price fw-bold"> $49.500 </span>
-                      <button type="button" class="btn btn-primary btn-sm">
-                        Agregar al carrito
-                      </button>
+                      <input
+                        type="checkbox"
+                        id="add3"
+                        class="add-check"
+                        hidden
+                      />
+                      <label for="add3" class="btn-cart">
+                        <span
+                          class="texto-original btn btn-primary btn-sm btn-cart"
+                          >Agregar al carrito</span
+                        >
+                        <span
+                          class="texto-agregado btn btn-success btn-sm btn-cart"
+                          >✔ Agregado</span
+                        >
+                      </label>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
             <!-- Producto 4 -->
-            <div class="col-12 col-sm-6 col-lg-3">
+            <div class="col-12 col-sm-6 col-lg-3 scale-in-bottom">
               <div
                 class="card-body text-center d-flex flex-column align-items-center p-0"
               >
-                <div class="card product-card text-center">
+                <div class="card product-card shadow-drop-2-bottom text-center">
                   <div class="container-img">
                     <img
                       src="img/products/cielorraso.jpg"
@@ -358,7 +412,7 @@
                   <div class="card-body">
                     <h5 class="card-title">RECUPLAST CIELORRASO</h5>
                     <div class="card-body">
-                      <p class="card-text">
+                      <p class="card-text-description">
                         Látex con película de alta porosidad, que evita los
                         problemas de condensación de humedad, especialmente
                         enambientes mal ventilados.
@@ -377,12 +431,22 @@
                       class="card-footer d-flex flex-column justify-content-around align-items-center gap-2"
                     >
                       <span class="card-price fw-bold"> $22.500 </span>
-                      <button
-                        type="button"
-                        class="btn btn-primary btn-sm btn-sm"
-                      >
-                        Agregar al carrito
-                      </button>
+                      <input
+                        type="checkbox"
+                        id="add4"
+                        class="add-check"
+                        hidden
+                      />
+                      <label for="add4" class="btn-cart">
+                        <span
+                          class="texto-original btn btn-primary btn-sm btn-cart"
+                          >Agregar al carrito</span
+                        >
+                        <span
+                          class="texto-agregado btn btn-success btn-sm btn-cart"
+                          >✔ Agregado</span
+                        >
+                      </label>
                     </div>
                   </div>
                 </div>
@@ -392,42 +456,136 @@
         </div>
       </section>
 
-      <!-- Sección de promociones especiales -->
-      <div class="container contenedor-box">
-        <section class="promo-box">
-          <h2><i class="fas fa-tags"></i> Ofertas</h2>
+      <!-- Sección de preguntas frecuentes -->
+      <div class="container mt-4 p-2">
+        <h2 class="text-center mb-4 preguntas_frecuentes-text">
+          <i class="bi bi-patch-question"></i>
+          Preguntas frecuentes
+        </h2>
 
-          <span>
-            <p class="upto">OFF</p>
-            <span class="porcentaje-descuento">
-              <h1>50%</h1>
-              <p>Descuento en Latex King Interior/Exterior.</p>
-            </span>
-          </span>
-
-          <a href="#">Ver más</a>
-        </section>
-        <section class="promo-box">
-          <h2><i class="fas fa-tags"></i> Ofertas</h2>
-
-          <span>
-            <p class="upto">OFF</p>
-            <span class="porcentaje-descuento">
-              <h1>25%</h1>
-              <p>Descuento en todos nuestros productos, pagando en Efectivo.</p>
-            </span>
-          </span>
-
-          <a href="#">Ver más</a>
-        </section>
+        <div
+          class="accordion accordion-flush d-flex flex-column gap-3 container"
+          id="accordionFlushExample"
+        >
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseOne"
+                aria-expanded="false"
+                aria-controls="flush-collapseOne"
+              >
+                ¿De qué color debería pintar mi habitación o casa?
+              </button>
+            </h2>
+            <div
+              id="flush-collapseOne"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                La elección del color depende del tipo de habitación y del
+                ambiente que se desea crear. Por ejemplo, los colores claros y
+                etéreos son ideales para dormitorios o baños, ya que ayudan a
+                ampliar el espacio. En cocinas, se prefieren tonos tierra para
+                una sensación de paz y tranquilidad.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseTwo"
+                aria-expanded="false"
+                aria-controls="flush-collapseTwo"
+              >
+                ¿Cuánta pintura necesito para mi proyecto?
+              </button>
+            </h2>
+            <div
+              id="flush-collapseTwo"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                La cantidad de pintura necesaria depende del área a cubrir y de
+                las características de la superficie. Por ejemplo, las
+                superficies texturizadas requieren más pintura que las lisas.
+                Además, si se realiza un cambio de color significativo, como de
+                oscuro a claro, puede ser necesario aplicar más capas.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseThree"
+                aria-expanded="false"
+                aria-controls="flush-collapseThree"
+              >
+                ¿Qué tipo de pintura debo usar para cada superficie?
+              </button>
+            </h2>
+            <div
+              id="flush-collapseThree"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                Existen diferentes tipos de pintura según la superficie y el
+                acabado deseado. Por ejemplo, la pintura plástica es común para
+                interiores, mientras que el esmalte sintético se utiliza para
+                metales y maderas. Es importante elegir la pintura adecuada para
+                garantizar durabilidad y un buen acabado.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseFour"
+                aria-expanded="false"
+                aria-controls="flush-collapseFour"
+              >
+                ¿Cuántas manos de pintura son necesarias?
+              </button>
+            </h2>
+            <div
+              id="flush-collapseFour"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                El número de manos de pintura necesarias depende del color
+                anterior y del nuevo color. Si se cambia de un color oscuro a
+                uno claro, puede ser necesario aplicar una mano de blanco antes
+                para ahorrar pintura y lograr un acabado uniforme.
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+
+      <!-- Sección de testimonios -->
+
       <div class="testimonials-header">
         <h2 class="testimonials-title">
           <i class="fa fa-quote-left pe-2"></i> Testimonios
         </h2>
       </div>
-      <section class="testimonials">
-        <div class="testimonial">
+      <section class="testimonials container">
+        <div class="slide-fwd-top testimonial">
           <div class="testimonial-image">
             <img
               src="https://randomuser.me/api/portraits/men/83.jpg"
@@ -443,7 +601,7 @@
           <p class="testimonial-author">- Juan Pérez</p>
         </div>
 
-        <div class="testimonial">
+        <div class="slide-fwd-top testimonial">
           <div class="testimonial-image">
             <img
               src="https://randomuser.me/api/portraits/men/78.jpg"
@@ -459,7 +617,7 @@
           <p class="testimonial-author">- Mario González</p>
         </div>
 
-        <div class="testimonial">
+        <div class="slide-fwd-top testimonial">
           <div class="testimonial-image">
             <img
               src="https://randomuser.me/api/portraits/men/79.jpg"
@@ -476,7 +634,7 @@
           <p class="testimonial-author">- Carlos Rodríguez</p>
         </div>
 
-        <div class="testimonial">
+        <div class="slide-fwd-top testimonial">
           <div class="testimonial-image">
             <img
               src="https://randomuser.me/api/portraits/men/80.jpg"
@@ -492,7 +650,7 @@
           <p class="testimonial-author">- Diego Pérez</p>
         </div>
 
-        <div class="testimonial">
+        <div class="slide-fwd-top testimonial">
           <div class="testimonial-image">
             <img
               src="https://randomuser.me/api/portraits/men/81.jpg"
@@ -508,7 +666,7 @@
           <p class="testimonial-author">- Andrés Ruiz</p>
         </div>
 
-        <div class="testimonial">
+        <div class="slide-fwd-top testimonial">
           <div class="testimonial-image">
             <img
               src="https://randomuser.me/api/portraits/men/82.jpg"
@@ -538,5 +696,9 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

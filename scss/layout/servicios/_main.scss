@@ -1,0 +1,78 @@
+@use "../../utils/mixins";
+
+.container__img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background-color: #f8f8f8;
+    @include mixins.flexCenter;
+}
+
+.img-services {
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+}
+
+h1,
+h2 {
+    font-weight: 700;
+}
+
+.service-card {
+    background-color: #f8f9fa;
+    /* Color de fondo claro */
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-left: 6px solid #0d6efd;
+    /* Azul Bootstrap */
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+
+    &:hover {
+        transform: translateY(-5px);
+    }
+}
+
+
+.icon-box {
+    font-size: 2.5rem;
+    color: #1f4e79;
+    margin-bottom: 1rem;
+}
+
+.btn-primary {
+    @include mixins.btnStyle(#1f4e79, 'transparent', #fff);
+
+    &:hover {
+        @include mixins.btnStyle(#163b5a, 'transparent', #fff);
+
+    }
+
+
+}
+
+.section-title {
+    border-bottom: 3px solid #1f4e79;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+
+
+@keyframes scale-in-bottom {
+    0% {
+        transform: scale(0);
+        transform-origin: 50% 100%;
+        opacity: 1
+    }
+
+    100% {
+        transform: scale(1);
+        transform-origin: 50% 100%;
+        opacity: 1
+    }
+}

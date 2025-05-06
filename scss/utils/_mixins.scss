@@ -1,0 +1,75 @@
+@mixin backgroundImage($urlImage) {
+    background-image: url(#{$urlImage});
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+@mixin hover-shadow {
+    filter: drop-shadow(0px 0px 5px #000000);
+    transition: 0.4s;
+}
+
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flexColumn {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin flexRow {
+    display: flex;
+    flex-direction: row;
+}
+
+@mixin flexColumnCenter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flexRowCenter {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin reset {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+@mixin imgCover {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@mixin textStyle($color, $fontSize, $fontWeight, $textAlign, $lineHeight: normal, $letterSpacing: normal, $textShadow: none) {
+    color: $color;
+    font-size: $fontSize;
+    font-weight: $fontWeight;
+    text-align: $textAlign;
+    line-height: $lineHeight;
+    letter-spacing: $letterSpacing;
+    text-shadow: $textShadow;
+}
+
+@mixin btnStyle($bgColor, $borderColor, $textColor, $padding: 10px 20px, $borderRadius: 5px) {
+    background-color: $bgColor;
+    border-color: $borderColor;
+    color: $textColor;
+    padding: $padding;
+    border-radius: $borderRadius;
+}
+
+@mixin transition($property: all, $duration: 0.3s, $ease: ease-in-out) {
+    transition: $property $duration $ease;
+}

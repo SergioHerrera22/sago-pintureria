@@ -1,0 +1,49 @@
+@use "../../utils/mixins";
+
+.categorias {
+  padding: 20px;
+
+  .categorias-herramientas {
+    @include mixins.backgroundImage("../img/herramientas.jpg");
+  }
+
+  .categorias-pinturas {
+    @include mixins.backgroundImage("../img/pinturas.jpg");
+  }
+
+  .categorias-revestimientos {
+    @include mixins.backgroundImage("../img/revestimientos.jpg");
+  }
+
+  .categorias-accesorios {
+    @include mixins.backgroundImage("../img/accesorios.jpg");
+  }
+
+  .categorias-herramientas:hover,
+  .categorias-pinturas:hover,
+  .categorias-revestimientos:hover,
+  .categorias-accesorios:hover {
+    @include mixins.hover-shadow;
+  }
+
+  article {
+    padding: 15px 15px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+
+    a {
+      @include mixins.textStyle(var(--text-100),
+        25px,
+        600,
+        center,
+        normal,
+        normal,
+        0px 0px 8px #ffffff);
+      @include mixins.reset;
+    }
+  }
+}

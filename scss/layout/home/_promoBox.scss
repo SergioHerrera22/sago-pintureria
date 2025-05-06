@@ -1,0 +1,35 @@
+@use "../../utils/variables";
+@use "../../utils/mixins";
+
+
+.accordion-button {
+    background-color: #f8f9fa;
+    border-bottom: 2px solid variables.$primary-100;
+    color: #212529;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: left;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #e2e6ea;
+        border-color: variables.$primary-200;
+    }
+}
+
+.preguntas_frecuentes-text {
+    @include mixins.textStyle(#444, 2rem,
+        bold,
+        center,
+        normal,
+        normal,
+        none);
+
+
+    i {
+        font-size: 1.5rem;
+        color: #68a0b4;
+        /* Color para el icono */
+    }
+}

@@ -1,0 +1,85 @@
+@use "../../utils/mixins";
+@use "../../utils/variables";
+
+.testimonials-header {
+  margin-top: 30px;
+  @include mixins.flexCenter;
+
+  .testimonials-title {
+
+    @include mixins.textStyle(#444, 2rem,
+      bold,
+      center,
+      normal,
+      normal,
+      none);
+    margin-left: 10px;
+    @include mixins.flexCenter;
+  }
+
+  i {
+    font-size: 1.5rem;
+    color: #68a0b4;
+    /* Color para el icono */
+  }
+}
+
+.testimonials {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-template-rows: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 20px;
+  padding: 20px;
+
+  .testimonial {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    @include mixins.flexColumnCenter;
+    gap: 15px;
+
+    cursor: pointer;
+    border: 2px solid transparent;
+
+    .testimonial-image {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 3px solid variables.$primary-100;
+
+      img {
+        @include mixins.imgCover;
+      }
+
+    }
+
+    .testimonial-text {
+      text-align: center;
+
+      .fa-quote-left,
+      .fa-quote-right {
+        font-size: 0.8rem;
+        color: variables.$primary-100;
+      }
+
+      blockquote {
+        color: variables.$text-100;
+        font-style: italic;
+        margin: 10px 0;
+        line-height: 1.6;
+      }
+    }
+
+    .testimonial-author {
+      color: variables.$primary-100;
+      font-weight: 600;
+      margin-top: 10px;
+    }
+  }
+}
+
+.slide-fwd-top:hover {
+  border: 2px solid variables.$primary-100;
+}

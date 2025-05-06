@@ -7,7 +7,7 @@ Este proyecto es parte de mi formación como **Desarrollador Full Stack** en Cod
 
 - Carrusel de imágenes destacadas.
 - Secciones de categorías de productos.
-- Presentación de productos nuevos y promociones.
+- Presentación de productos nuevos y pro mociones.
 - Diseño responsivo adaptable a dispositivos móviles.
 - Estructura basada en **HTML5** y **CSS3**.
 - Utilización de **Bootstrap** para componentes como el carrusel y modales.
@@ -51,6 +51,7 @@ sago-pintureria/
 
 Actualmente está en desarrollo.
 Próximas mejoras planificadas:
+
 - Integración de funcionalidades dinámicas con **JavaScript**.
 - Implementación de carrito de compras.
 
@@ -67,5 +68,7 @@ Accedé a la web aquí 👉 [SAGO Pinturería](https://sergioherrera22.github.io
 ---
 
 ¡Gracias por visitar el proyecto! 🎨✨
+
 ```
 
+```

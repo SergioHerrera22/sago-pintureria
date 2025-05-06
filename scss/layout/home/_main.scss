@@ -1,0 +1,164 @@
+@use "sass:meta";
+@use "../../utils/mixins";
+@use "../../utils/variables";
+
+.img-carrousel {
+  max-height: 350px;
+  object-fit: cover;
+}
+
+.carrousel-title {
+  @include mixins.textStyle(var(--text-100), 40px, 700, center, normal, normal, 0px 0px 8px #3c3b3b);
+
+
+}
+
+.carrousel-description {
+  @include mixins.textStyle(var(--text-100), 20px, 400, center, normal, normal, 0px 0px 10px #000000);
+}
+
+.contenido-principal {
+  @include mixins.flexColumn;
+}
+
+
+
+// Categorías
+
+@include meta.load-css("categorias");
+@include meta.load-css("promoBox");
+@include meta.load-css("testimonials");
+@include meta.load-css('../footer');
+
+//Responsive Design
+@media (max-width: 768px) {
+  .testimonials {
+    @include mixins.flexColumn;
+    gap: 10px;
+    padding: 20px;
+  }
+
+  .contenedor-box {
+    @include mixins.flexColumnCenter;
+  }
+
+  .promo-box {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .promo-box {
+    a {
+      @include mixins.reset;
+      font-size: 14px;
+    }
+
+    h2 {
+      font-size: 24px;
+    }
+
+    .porcentaje-descuento {
+      h1 {
+        font-size: 48px;
+      }
+
+      p {
+        font-size: 16px;
+
+      }
+    }
+  }
+
+
+}
+
+//Cards
+
+.heartbeat {
+  -webkit-animation: heartbeat 2s linear 2s both;
+  animation: heartbeat 2s linear 2s both;
+
+
+}
+
+
+
+@-webkit-keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+
+  10% {
+    -webkit-transform: scale(0.91);
+    transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+
+  17% {
+    -webkit-transform: scale(0.98);
+    transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+
+  33% {
+    -webkit-transform: scale(0.87);
+    transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+
+  45% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+}
+
+
+
+@keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+
+  10% {
+    -webkit-transform: scale(0.91);
+    transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+
+  17% {
+    -webkit-transform: scale(0.98);
+    transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+
+  33% {
+    -webkit-transform: scale(0.87);
+    transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+
+  45% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+}

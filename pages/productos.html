@@ -12,10 +12,7 @@
     />
 
     <!-- Hojas de estilo externas -->
-    <link rel="stylesheet" href="css/base.css" />
-
-    <link rel="stylesheet" href="./css/home.css" />
-    <link rel="stylesheet" href="./css/productos.css" />
+    <link rel="stylesheet" href="../css/style.css" />
 
     <!-- Font Awesome para iconografía -->
 
@@ -37,8 +34,8 @@
     <header class="container-fluid bg-body-tertiary p-0">
       <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-          <a class="navbar-brand" href="./index.html">
-            <img src="./img/LOGO_SAGO.svg" alt="" class="logo" />
+          <a class="navbar-brand" href="../index.html">
+            <img src="../img/LOGO_SAGO.svg" alt="" class="logo" />
           </a>
           <button
             class="navbar-toggler"
@@ -54,7 +51,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="./index.html"
+                <a class="nav-link" aria-current="page" href="../index.html"
                   >Inicio</a
                 >
               </li>
@@ -62,13 +59,13 @@
                 <a class="nav-link active" href="./productos.html">Productos</a>
               </li>
               <li class="nav-item">
-                <a href="./servicios.html" class="nav-link">Servicios</a>
+                <a href="servicios.html" class="nav-link">Servicios</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./nosotros.html">Nosotros</a>
+                <a class="nav-link" href="nosotros.html">Nosotros</a>
               </li>
               <li class="nav-item">
-                <a href="./contacto.html" class="nav-link">Contacto</a>
+                <a href="contacto.html" class="nav-link">Contacto</a>
               </li>
             </ul>
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
@@ -94,14 +91,14 @@
         <h2 class="text-center mb-4">Nuestros productos</h2>
         <div class="row g-4">
           <!-- Producto 1 -->
-          <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+          <div class="col-12 col-md-6 col-lg-4 col-xl-3 scale-in-bottom">
             <div
               class="card-body text-center d-flex flex-column align-items-center p-0"
             >
-              <div class="card product-card text-center">
+              <div class="card product-card shadow-drop-2-bottom text-center">
                 <div class="container-img">
                   <img
-                    src="img/products/atermico.jpg"
+                    src="../img/products/atermico.jpg"
                     alt="Producto 1"
                     class="product-image mb-0"
                   />
@@ -109,7 +106,7 @@
                 <div class="card-body">
                   <h5 class="card-title">RECUPLAST ATÉRMICO</h5>
                   <div class="card-body">
-                    <p class="card-text">
+                    <p class="card-text-description">
                       Su fórmula con microesferas de vidrio refleja más del 80%
                       de los rayos solares, reduciendo la temperatura interior y
                       ahorrando energía eléctrica.
@@ -128,31 +125,39 @@
                     class="card-footer d-flex flex-column justify-content-around align-items-center gap-2"
                   >
                     <span class="card-price fw-bold"> $48.500 </span>
-                    <button type="button" class="btn btn-primary btn-sm">
-                      Agregar al carrito
-                    </button>
+                    <input type="checkbox" id="add1" class="add-check" hidden />
+                    <label for="add1" class="btn-cart">
+                      <span
+                        class="texto-original btn btn-primary btn-sm btn-cart"
+                        >Agregar al carrito</span
+                      >
+                      <span
+                        class="texto-agregado btn btn-success btn-sm btn-cart"
+                        >✔ Agregado</span
+                      >
+                    </label>
                   </div>
                 </div>
               </div>
             </div>
           </div>
           <!-- Producto 2 -->
-          <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+          <div class="col-12 col-md-6 col-lg-4 col-xl-3 scale-in-bottom">
             <div
               class="card-body text-center d-flex flex-column align-items-center p-0"
             >
-              <div class="card product-card text-center">
+              <div class="card product-card shadow-drop-2-bottom text-center">
                 <div class="container-img">
                   <img
-                    src="img/products/acrilpalst.jpg"
-                    alt="Producto 1"
+                    src="../img/products/acrilpalst.jpg"
+                    alt="Producto 2"
                     class="product-image mb-0"
                   />
                 </div>
                 <div class="card-body">
                   <h5 class="card-title">ACRILPLAST I/E</h5>
                   <div class="card-body">
-                    <p class="card-text">
+                    <p class="card-text-description">
                       Es un látex de uso interior y exterior que proporciona un
                       acabado mate homogéneo, resistente a la intemperie , a los
                       lavados y gran poder cubritivo.
@@ -168,34 +173,42 @@
                     </div>
                   </div>
                   <div
-                  class="card-footer d-flex flex-column justify-content-around align-items-center gap-2"
-                >
-                  <span class="card-price fw-bold"> $48.500 </span>
-                  <button type="button" class="btn btn-primary btn-sm">
-                    Agregar al carrito
-                  </button>
-                </div>
+                    class="card-footer d-flex flex-column justify-content-around align-items-center gap-2"
+                  >
+                    <span class="card-price fw-bold"> $48.500 </span>
+                    <input type="checkbox" id="add2" class="add-check" hidden />
+                    <label for="add2" class="btn-cart">
+                      <span
+                        class="texto-original btn btn-primary btn-sm btn-cart"
+                        >Agregar al carrito</span
+                      >
+                      <span
+                        class="texto-agregado btn btn-success btn-sm btn-cart"
+                        >✔ Agregado</span
+                      >
+                    </label>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
           <!-- Producto 3 -->
-          <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+          <div class="col-12 col-md-6 col-lg-4 col-xl-3 scale-in-bottom">
             <div
               class="card-body text-center d-flex flex-column align-items-center p-0"
             >
-              <div class="card product-card text-center">
+              <div class="card product-card shadow-drop-2-bottom text-center">
                 <div class="container-img">
                   <img
-                    src="img/products/brilloplastSR.jpg"
-                    alt="Producto 1"
+                    src="../img/products/brilloplastSR.jpg"
+                    alt="Producto 3"
                     class="product-image mb-0"
                   />
                 </div>
                 <div class="card-body">
                   <h5 class="card-title">BRILLOPLAST S/R</h5>
                   <div class="card-body">
-                    <p class="card-text">
+                    <p class="card-text-description">
                       Esmalte sintético de secado rápido, de gran brillo y
                       resistencia a la intemperie. Ideal para la protección y
                       decoración de metal y madera.
@@ -211,26 +224,34 @@
                     </div>
                   </div>
                   <div
-                  class="card-footer d-flex flex-column justify-content-around align-items-center gap-2"
-                >
-                  <span class="card-price fw-bold"> $48.500 </span>
-                  <button type="button" class="btn btn-primary btn-sm">
-                    Agregar al carrito
-                  </button>
-                </div>
+                    class="card-footer d-flex flex-column justify-content-around align-items-center gap-2"
+                  >
+                    <span class="card-price fw-bold"> $48.500 </span>
+                    <input type="checkbox" id="add3" class="add-check" hidden />
+                    <label for="add3" class="btn-cart">
+                      <span
+                        class="texto-original btn btn-primary btn-sm btn-cart"
+                        >Agregar al carrito</span
+                      >
+                      <span
+                        class="texto-agregado btn btn-success btn-sm btn-cart"
+                        >✔ Agregado</span
+                      >
+                    </label>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
           <!-- Producto 4 -->
-          <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+          <div class="col-12 col-md-6 col-lg-4 col-xl-3 scale-in-bottom">
             <div
               class="card-body text-center d-flex flex-column align-items-center p-0"
             >
-              <div class="card product-card text-center">
+              <div class="card product-card shadow-drop-2-bottom text-center">
                 <div class="container-img">
                   <img
-                    src="img/products/cielorraso.jpg"
+                    src="../img/products/cielorraso.jpg"
                     alt="Producto 1"
                     class="product-image mb-0"
                   />
@@ -238,7 +259,7 @@
                 <div class="card-body">
                   <h5 class="card-title">RECUPLAST CIELORRASO</h5>
                   <div class="card-body">
-                    <p class="card-text">
+                    <p class="card-text-description">
                       Látex con película de alta porosidad, que evita los
                       problemas de condensación de humedad, especialmente
                       enambientes mal ventilados.
@@ -254,26 +275,34 @@
                     </div>
                   </div>
                   <div
-                  class="card-footer d-flex flex-column justify-content-around align-items-center gap-2"
-                >
-                  <span class="card-price fw-bold"> $48.500 </span>
-                  <button type="button" class="btn btn-primary btn-sm">
-                    Agregar al carrito
-                  </button>
-                </div>
+                    class="card-footer d-flex flex-column justify-content-around align-items-center gap-2"
+                  >
+                    <span class="card-price fw-bold"> $48.500 </span>
+                    <input type="checkbox" id="add4" class="add-check" hidden />
+                    <label for="add4" class="btn-cart">
+                      <span
+                        class="texto-original btn btn-primary btn-sm btn-cart"
+                        >Agregar al carrito</span
+                      >
+                      <span
+                        class="texto-agregado btn btn-success btn-sm btn-cart"
+                        >✔ Agregado</span
+                      >
+                    </label>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
           <!-- Producto 5 -->
-          <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+          <div class="col-12 col-md-6 col-lg-4 col-xl-3 scale-in-bottom">
             <div
               class="card-body text-center d-flex flex-column align-items-center p-0"
             >
-              <div class="card product-card text-center">
+              <div class="card product-card shadow-drop-2-bottom text-center">
                 <div class="container-img">
                   <img
-                    src="img/products/ferroxin.jpg"
+                    src="../img/products/ferroxin.jpg"
                     alt="Producto 1"
                     class="product-image mb-0"
                   />
@@ -281,7 +310,7 @@
                 <div class="card-body">
                   <h5 class="card-title">FERROXÍN</h5>
                   <div class="card-body">
-                    <p class="card-text">
+                    <p class="card-text-description">
                       Esmalte de terminación para aplicar directamente sobre
                       hierro, al que le otorga protección contra la oxidación y
                       un particular efecto decorativo.
@@ -297,26 +326,34 @@
                     </div>
                   </div>
                   <div
-                  class="card-footer d-flex flex-column justify-content-around align-items-center gap-2"
-                >
-                  <span class="card-price fw-bold"> $48.500 </span>
-                  <button type="button" class="btn btn-primary btn-sm">
-                    Agregar al carrito
-                  </button>
-                </div>
+                    class="card-footer d-flex flex-column justify-content-around align-items-center gap-2"
+                  >
+                    <span class="card-price fw-bold"> $48.500 </span>
+                    <input type="checkbox" id="add5" class="add-check" hidden />
+                    <label for="add5" class="btn-cart">
+                      <span
+                        class="texto-original btn btn-primary btn-sm btn-cart"
+                        >Agregar al carrito</span
+                      >
+                      <span
+                        class="texto-agregado btn btn-success btn-sm btn-cart"
+                        >✔ Agregado</span
+                      >
+                    </label>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
           <!-- Producto 6 -->
-          <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+          <div class="col-12 col-md-6 col-lg-4 col-xl-3 scale-in-bottom">
             <div
               class="card-body text-center d-flex flex-column align-items-center p-0"
             >
-              <div class="card product-card text-center">
+              <div class="card product-card shadow-drop-2-bottom text-center">
                 <div class="container-img">
                   <img
-                    src="img/products/recubrick.jpg"
+                    src="../img/products/recubrick.jpg"
                     alt="Producto 1"
                     class="product-image mb-0"
                   />
@@ -324,7 +361,7 @@
                 <div class="card-body">
                   <h5 class="card-title">RECUBRICK</h5>
                   <div class="card-body">
-                    <p class="card-text">
+                    <p class="card-text-description">
                       Recubrimiento plástico que impermeabiliza las superficies
                       y las protege de suciedad, hongos, manchas, etc. Realza la
                       belleza natural de los materiales nobles.
@@ -340,26 +377,34 @@
                     </div>
                   </div>
                   <div
-                  class="card-footer d-flex flex-column justify-content-around align-items-center gap-2"
-                >
-                  <span class="card-price fw-bold"> $48.500 </span>
-                  <button type="button" class="btn btn-primary btn-sm">
-                    Agregar al carrito
-                  </button>
-                </div>
+                    class="card-footer d-flex flex-column justify-content-around align-items-center gap-2"
+                  >
+                    <span class="card-price fw-bold"> $48.500 </span>
+                    <input type="checkbox" id="add6" class="add-check" hidden />
+                    <label for="add6" class="btn-cart">
+                      <span
+                        class="texto-original btn btn-primary btn-sm btn-cart"
+                        >Agregar al carrito</span
+                      >
+                      <span
+                        class="texto-agregado btn btn-success btn-sm btn-cart"
+                        >✔ Agregado</span
+                      >
+                    </label>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
           <!-- Producto 7 -->
-          <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+          <div class="col-12 col-md-6 col-lg-4 col-xl-3 scale-in-bottom">
             <div
               class="card-body text-center d-flex flex-column align-items-center p-0"
             >
-              <div class="card product-card text-center">
+              <div class="card product-card shadow-drop-2-bottom text-center">
                 <div class="container-img">
                   <img
-                    src="img/products/interior.jpg"
+                    src="../img/products/interior.jpg"
                     alt="Producto 1"
                     class="product-image mb-0"
                   />
@@ -367,7 +412,7 @@
                 <div class="card-body">
                   <h5 class="card-title">RECUPLAST INTERIOR</h5>
                   <div class="card-body">
-                    <p class="card-text">
+                    <p class="card-text-description">
                       Látex premium interior. Para proteger y decorar
                       interiores, de fácil aplicación con mínimo salpicado, buen
                       nivelamiento y excelente poder cubriente.
@@ -383,26 +428,34 @@
                     </div>
                   </div>
                   <div
-                  class="card-footer d-flex flex-column justify-content-around align-items-center gap-2"
-                >
-                  <span class="card-price fw-bold"> $48.500 </span>
-                  <button type="button" class="btn btn-primary btn-sm">
-                    Agregar al carrito
-                  </button>
-                </div>
+                    class="card-footer d-flex flex-column justify-content-around align-items-center gap-2"
+                  >
+                    <span class="card-price fw-bold"> $48.500 </span>
+                    <input type="checkbox" id="add7" class="add-check" hidden />
+                    <label for="add7" class="btn-cart">
+                      <span
+                        class="texto-original btn btn-primary btn-sm btn-cart"
+                        >Agregar al carrito</span
+                      >
+                      <span
+                        class="texto-agregado btn btn-success btn-sm btn-cart"
+                        >✔ Agregado</span
+                      >
+                    </label>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
           <!-- Producto 8 -->
-          <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+          <div class="col-12 col-md-6 col-lg-4 col-xl-3 scale-in-bottom">
             <div
               class="card-body text-center d-flex flex-column align-items-center p-0"
             >
-              <div class="card product-card text-center">
+              <div class="card product-card shadow-drop-2-bottom text-center">
                 <div class="container-img">
                   <img
-                    src="img/products/techos.jpg"
+                    src="../img/products/techos.jpg"
                     alt="Producto 1"
                     class="product-image mb-0"
                   />
@@ -410,7 +463,7 @@
                 <div class="card-body">
                   <h5 class="card-title">RECUPLAST TECHOS</h5>
                   <div class="card-body">
-                    <p class="card-text">
+                    <p class="card-text-description">
                       Impermeabilizante acrílico para techos de base acuosa.
                       Aplicado en el espesor recomendado, una vez seco, forma
                       una película super elástica de alta resistencia.
@@ -426,13 +479,21 @@
                     </div>
                   </div>
                   <div
-                  class="card-footer d-flex flex-column justify-content-around align-items-center gap-2"
-                >
-                  <span class="card-price fw-bold"> $48.500 </span>
-                  <button type="button" class="btn btn-primary btn-sm">
-                    Agregar al carrito
-                  </button>
-                </div>
+                    class="card-footer d-flex flex-column justify-content-around align-items-center gap-2"
+                  >
+                    <span class="card-price fw-bold"> $48.500 </span>
+                    <input type="checkbox" id="add8" class="add-check" hidden />
+                    <label for="add8" class="btn-cart">
+                      <span
+                        class="texto-original btn btn-primary btn-sm btn-cart"
+                        >Agregar al carrito</span
+                      >
+                      <span
+                        class="texto-agregado btn btn-success btn-sm btn-cart"
+                        >✔ Agregado</span
+                      >
+                    </label>
+                  </div>
                 </div>
               </div>
             </div>
