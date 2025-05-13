@@ -26,8 +26,9 @@
 // Categorías
 
 @include meta.load-css("categorias");
-@include meta.load-css("promoBox");
+@include meta.load-css("preguntasFrecuentes");
 @include meta.load-css("testimonials");
+@include meta.load-css('marcas');
 @include meta.load-css('../footer');
 
 //Responsive Design
