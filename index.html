@@ -96,9 +96,11 @@
             </ul>
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" href="#carrito">
-                  <i class="fas fa-shopping-cart"></i> Mi Carrito
-                </a>
+                <button type="button" class="btn btn-primary">
+                  <i class="fas fa-shopping-cart"></i>
+                  Mi Carrito <span class="badge text-bg-secondary" id="cantidadCarrito"></span>
+                </button>
+                
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#micuenta">
@@ -260,7 +262,7 @@
                     <div
                       class="card-footer d-flex flex-column justify-content-around align-items-center gap-2"
                     >
-                      <span class="card-price fw-bold"> $48.500 </span>
+                      <span class="card-price fw-bold" id="precioProducto"> $48.500 </span>
                       <input
                         type="checkbox"
                         id="add1"
@@ -269,7 +271,7 @@
                       />
                       <label for="add1" class="btn-cart">
                         <span
-                          class="texto-original btn btn-primary btn-sm btn-cart"
+                          class="texto-original btn btn-primary btn-sm btn-cart" id="btnAgregar"
                           >Agregar al carrito</span
                         >
                         <span
@@ -316,7 +318,7 @@
                     <div
                       class="card-footer d-flex flex-column justify-content-around align-items-center gap-2"
                     >
-                      <span class="card-price fw-bold"> $44.500 </span>
+                      <span class="card-price fw-bold" id="precioProducto"> $44.500 </span>
                       <input
                         type="checkbox"
                         id="add2"
@@ -325,7 +327,7 @@
                       />
                       <label for="add2" class="btn-cart">
                         <span
-                          class="texto-original btn btn-primary btn-sm btn-cart"
+                          class="texto-original btn btn-primary btn-sm btn-cart" id="btnAgregar"
                           >Agregar al carrito</span
                         >
                         <span
@@ -374,7 +376,7 @@
                     <div
                       class="card-footer d-flex flex-column justify-content-around align-items-center gap-2"
                     >
-                      <span class="card-price fw-bold"> $49.500 </span>
+                      <span class="card-price fw-bold" id="precioProducto"> $49.500 </span>
                       <input
                         type="checkbox"
                         id="add3"
@@ -383,7 +385,7 @@
                       />
                       <label for="add3" class="btn-cart">
                         <span
-                          class="texto-original btn btn-primary btn-sm btn-cart"
+                          class="texto-original btn btn-primary btn-sm btn-cart" id="btnAgregar"
                           >Agregar al carrito</span
                         >
                         <span
@@ -430,7 +432,7 @@
                     <div
                       class="card-footer d-flex flex-column justify-content-around align-items-center gap-2"
                     >
-                      <span class="card-price fw-bold"> $22.500 </span>
+                      <span class="card-price fw-bold" id="precioProducto"> $22.500 </span>
                       <input
                         type="checkbox"
                         id="add4"
@@ -439,7 +441,7 @@
                       />
                       <label for="add4" class="btn-cart">
                         <span
-                          class="texto-original btn btn-primary btn-sm btn-cart"
+                          class="texto-original btn btn-primary btn-sm btn-cart" id="btnAgregar"
                           >Agregar al carrito</span
                         >
                         <span
@@ -731,6 +733,8 @@
         derechos reservados.
       </p>
     </footer>
+
+    <script src="/script/index.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
