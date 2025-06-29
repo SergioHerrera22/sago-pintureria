@@ -162,6 +162,23 @@ const agregarAlCarritoLocalStorage = (producto) => {
 const renderizarCarrito = () => {
   listGroup.innerHTML = "";
   let listaCarrito = leerElementosLocalStorage();
+  const mensajeVacio = document.querySelector(".mensaje-carrito-vacio");
+  const btnFinalizar = document.querySelector(".btn-finalizar-compra");
+
+  if (!mensajeVacio || !btnFinalizar) {
+    console.warn("Faltan elementos del DOM: mensaje o botón de finalizar");
+    return;
+  }
+
+  if (listaCarrito.length === 0) {
+    mensajeVacio.style.display = "block";
+    btnFinalizar.style.display = "none";
+    totalCarrito.textContent = "0.00";
+    return;
+  } else {
+    mensajeVacio.style.display = "none";
+    btnFinalizar.style.display = "inline-block";
+  }
 
   listaCarrito.forEach((producto) => {
     const nuevoElemento = document.createElement("li");
@@ -264,5 +281,11 @@ const renderizarProductos = () => {
 };
 
 document.addEventListener("DOMContentLoaded", () => {
-  renderizarProductos();
+  setTimeout(() => {
+    renderizarProductos();
+
+    // Ocultar el loader una vez que los productos reales se cargan
+    const skeleton = document.getElementById("skeleton-loader");
+    if (skeleton) skeleton.style.display = "none";
+  }, 1000); // Simula un retraso de carga de 1 segundo
 });

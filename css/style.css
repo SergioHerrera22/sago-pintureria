@@ -449,6 +449,10 @@ body {
   height: auto;
 }
 
+.placeholder {
+  animation: placeholder-glow 1.5s infinite;
+}
+
 .product-image {
   object-fit: contain;
   width: 100%;
