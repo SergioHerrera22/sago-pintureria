@@ -39,6 +39,46 @@ const productos = [
     badges: ["Base Agua", "Anti-Hongo", "Mate"],
     cantidad: 0,
   },
+  {
+    id: "add5",
+    nombre: "FERROXÍN",
+    descripcion:
+      "Esmalte de terminación para aplicar directamente sobre hierro, al que le otorga protección contra la oxidación y un particular efecto decorativo.",
+    precio: 48500,
+    imagenUrl: "../img/products/ferroxin.jpg",
+    badges: ["Base Solvente", "Efecto Rústico", "2 en 1"],
+    cantidad: 0,
+  },
+  {
+    id: "add6",
+    nombre: "RECUBRICK",
+    descripcion:
+      "Recubrimiento plástico que impermeabiliza las superficies y las protege de suciedad, hongos, manchas, etc. Realza la belleza natural de los materiales nobles.",
+    precio: 48500,
+    imagenUrl: "../img/products/recubrick.jpg",
+    badges: ["Base Agua", "Satinado", "Impermeable"],
+    cantidad: 0,
+  },
+  {
+    id: "add7",
+    nombre: "RECUPLAST INTERIOR",
+    descripcion:
+      "Látex premium interior. Para proteger y decorar interiores, de fácil aplicación con mínimo salpicado, buen nivelamiento y excelente poder cubriente.",
+    precio: 48500,
+    imagenUrl: "../img/products/interior.jpg",
+    badges: ["Base Agua", "Mate", "Colores"],
+    cantidad: 0,
+  },
+  {
+    id: "add8",
+    nombre: "RECUPLAST TECHOS",
+    descripcion:
+      "Impermeabilizante acrílico para techos de base acuosa. Aplicado en el espesor recomendado, una vez seco, forma una película super elástica de alta resistencia.",
+    precio: 48500,
+    imagenUrl: "../img/products/techos.jpg",
+    badges: ["Base Agua", "Reflectiva", "Impermeable"],
+    cantidad: 0,
+  },
 ];
 const btnCarrito = document.querySelector(".btn-carrito");
 const listGroup = document.querySelector(".list-group");

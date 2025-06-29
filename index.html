@@ -1,623 +1,282 @@
 <!DOCTYPE html>
 <!-- Página principal de SAGO Pinturas -->
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Descubrí productos Sinteplast, impermeabilizantes, sintéticos y más en SAGO Pinturas. Calidad, precio y promociones exclusivas."
-    />
-    <meta
-      name="keywords"
-      content="pinturas, sinteplast, impermeabilizantes, sintético, pintura hogar, sago, sago pinturas, latex, esmalte, promoción pintura"
-    />
-    <meta name="author" content="SAGO Pinturas" />
-    <title>SAGO Pinturas | Tienda de pinturas, impermeabilizantes y más</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
-    <!-- Hojas de estilo externas -->
-    <link rel="stylesheet" href="css/style.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Descubrí productos Sinteplast, impermeabilizantes, sintéticos y más en SAGO Pinturas. Calidad, precio y promociones exclusivas." />
+  <meta name="keywords"
+    content="pinturas, sinteplast, impermeabilizantes, sintético, pintura hogar, sago, sago pinturas, latex, esmalte, promoción pintura" />
+  <meta name="author" content="SAGO Pinturas" />
+  <title>SAGO Pinturas | Tienda de pinturas, impermeabilizantes y más</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
-    <!-- Font Awesome para iconografía -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
-      rel="stylesheet"
-    />
+  <!-- Hojas de estilo externas -->
+  <link rel="stylesheet" href="css/style.css" />
 
-    <!-- Google Fonts - Source Sans 3 -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
-      rel="stylesheet"
-    />
-  </head>
+  <!-- Font Awesome para iconografía -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
 
-  <body>
-    <!-- Banner de ofertas especiales -->
+  <!-- Google Fonts - Source Sans 3 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+    rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+    rel="stylesheet" />
+</head>
 
-    <!-- Encabezado principal -->
-    <header class="container-fluid bg-body-tertiary p-0">
-      <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="index.html">
-            <img src="./img/LOGO_SAGO.svg" alt="Logo de SAGO Pinturas" class="logo" />
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a
-                  class="nav-link active"
-                  aria-current="page"
-                  href="./index.html"
-                  >Inicio</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./pages/productos.html">Productos</a>
-              </li>
-              <li class="nav-item">
-                <a href="./pages/servicios.html" class="nav-link">Servicios</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
-              </li>
-              <li class="nav-item">
-                <a href="./pages/contacto.html" class="nav-link">Contacto</a>
-              </li>
-            </ul>
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <button type="button" class="btn btn-primary">
-                  <i class="fas fa-shopping-cart"></i>
-                  Mi Carrito <span class="badge text-bg-secondary" id="cantidadCarrito"></span>
-                </button>
-                
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#micuenta">
-                  <i class="fas fa-user"></i> Mi Cuenta
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
-    <main class="contenido-principal">
-      <!-- Sección de banner principal -->
-      <div id="carouselExampleCaptions" class="carousel slide img-carrousel">
-        <div class="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="0"
-            class="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img
-              src="./img/carrousel/pexels-pixabay-159045.jpg"
-              class="d-block w-100 img-carrousel"
-              alt="Fachada de casa pintada con revestimiento exterior"
-            />
-            <div class="carousel-caption d-none d-md-block">
-              <h1 class="carrousel-title">
-                ELIGE EL COLOR PERFECTO PARA TU REVESTIMIENTO EXTERIOR
-              </h1>
-              <p class="carrousel-description">
-                Con Colorin Travertino Rulato, tus ideas se hacen realidad.
-              </p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img
-              src="./img/carrousel/painter-5956469.jpg"
-              class="d-block w-100 img-carrousel"
-              alt="Pintor aplicando pintura automotriz"
-            />
-            <div class="carousel-caption d-none d-md-block">
-              <h2 class="carrousel-title">Pintura automotriz</h2>
-              <p class="carrousel-description">
-                En nuestro local encontrarás la mejor calidad de pintura para tu
-                auto.
-              </p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img
-              src="./img/carrousel/pexels-rdne-8293676.jpg"
-              class="d-block w-100 img-carrousel"
-              alt="Ambiente hogareño pintado con colores cálidos"
-            />
-            <div class="carousel-caption d-none d-md-block">
-              <h2 class="carrousel-title">El color para tu hogar</h2>
-              <p class="carrousel-description">
-                Ven por nuestro local, elige el color y el producto que mejor se
-                adapte a tus necesidades
-              </p>
-            </div>
-          </div>
-        </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
+<body>
+  <!-- Banner de ofertas especiales -->
+
+  <!-- Encabezado principal -->
+  <header class="container-fluid bg-body-tertiary fixed-top ">
+    <nav class="navbar navbar-expand-lg ">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img src="./img/LOGO_SAGO.svg" alt="Logo de SAGO Pinturas" class="logo" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
         </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/productos.html">Productos</a>
+            </li>
+            <li class="nav-item">
+              <a href="./pages/servicios.html" class="nav-link">Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a href="./pages/contacto.html" class="nav-link">Contacto</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <button type="button" class="btn btn-carrito" data-bs-toggle="modal" data-bs-target="#modalCarrito">
+                <i class="fas fa-shopping-cart"></i>
+                Mi Carrito <span class="badge text-bg-secondary" id="cantidadCarrito"></span>
+              </button>
+
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#micuenta">
+                <i class="fas fa-user"></i> Mi Cuenta
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
-
-      <!-- Sección de categorías principales -->
-      <section class="categorias container">
-        <div class="row gap-2 d-flex justify-content-around">
-          <article class="col text-center categorias-accesorios">
-            <a href="/pages/productos.html"> Accesorios </a>
-          </article>
-
-          <article class="col text-center categorias-pinturas">
-            <a href="/pages/productos.html"> Pinturas</a>
-          </article>
-
-          <article class="col text-center categorias-revestimientos">
-            <a href="/pages/productos.html"> Revestimientos</a>
-          </article>
-
-          <article class="col text-center categorias-herramientas">
-            <a href="/pages/productos.html"> Herramientas</a>
-          </article>
+    </nav>
+  </header>
+  <main class="contenido-principal">
+    <!-- Sección de banner principal -->
+    <div id="carouselExampleCaptions" class="carousel slide img-carrousel mt-5">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./img/carrousel/pexels-pixabay-159045.jpg" class="d-block w-100 img-carrousel"
+            alt="Fachada de casa pintada con revestimiento exterior" />
+          <div class="carousel-caption d-none d-md-block">
+            <h1 class="carrousel-title">
+              ELIGE EL COLOR PERFECTO PARA TU REVESTIMIENTO EXTERIOR
+            </h1>
+            <p class="carrousel-description">
+              Con Colorin Travertino Rulato, tus ideas se hacen realidad.
+            </p>
+          </div>
         </div>
-      </section>
+        <div class="carousel-item">
+          <img src="./img/carrousel/painter-5956469.jpg" class="d-block w-100 img-carrousel"
+            alt="Pintor aplicando pintura automotriz" />
+          <div class="carousel-caption d-none d-md-block">
+            <h2 class="carrousel-title">Pintura automotriz</h2>
+            <p class="carrousel-description">
+              En nuestro local encontrarás la mejor calidad de pintura para tu
+              auto.
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./img/carrousel/pexels-rdne-8293676.jpg" class="d-block w-100 img-carrousel"
+            alt="Ambiente hogareño pintado con colores cálidos" />
+          <div class="carousel-caption d-none d-md-block">
+            <h2 class="carrousel-title">El color para tu hogar</h2>
+            <p class="carrousel-description">
+              Ven por nuestro local, elige el color y el producto que mejor se
+              adapte a tus necesidades
+            </p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
 
-      <!-- Sección de productos nuevos -->
-      <section class="nuevos-productos container">
-        <div class="container py-4">
-          <h2 class="text-center mb-4">Nuevos productos</h2>
-          <div class="row g-4">
-            <!-- Producto 1 -->
-            <div class="col-12 col-sm-6 col-lg-3 scale-in-bottom">
-              <div
-                class="card-body text-center d-flex flex-column align-items-center p-0"
-              >
-                <div class="card product-card shadow-drop-2-bottom text-center">
-                  <div class="container-img">
-                    <img
-                      src="img/products/atermico.jpg"
-                      alt="Producto 1"
-                      class="product-image mb-0"
-                    />
-                  </div>
-                  <div class="card-body">
-                    <h5 class="card-title">RECUPLAST ATÉRMICO</h5>
-                    <div class="card-body">
-                      <p class="card-text-description">
-                        Su fórmula con microesferas de vidrio refleja más del
-                        80% de los rayos solares, reduciendo la temperatura
-                        interior y ahorrando energía eléctrica.
-                      </p>
-                    </div>
-                    <div class="card-text d-flex flex-column">
-                      <div
-                        class="d-flex flex-wrap gap-2 mb-3 justify-content-center"
-                      >
-                        <span class="badge bg-info text-dark">Base Agua</span>
-                        <span class="badge bg-success">Reflectiva</span>
-                        <span class="badge bg-primary">Impermeable</span>
-                      </div>
-                    </div>
-                    <div
-                      class="card-footer d-flex flex-column justify-content-around align-items-center gap-2"
-                    >
-                      <span class="card-price fw-bold" id="precioProducto"> $48.500 </span>
-                      <input
-                        type="checkbox"
-                        id="add1"
-                        class="add-check"
-                        hidden
-                      />
-                      <label for="add1" class="btn-cart">
-                        <span
-                          class="texto-original btn btn-primary btn-sm btn-cart" id="btnAgregar"
-                          >Agregar al carrito</span
-                        >
-                        <span
-                          class="texto-agregado btn btn-success btn-sm btn-cart"
-                          >✔ Agregado</span
-                        >
-                      </label>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Producto 2 -->
-            <div class="col-12 col-sm-6 col-lg-3 scale-in-bottom">
-              <div
-                class="card-body text-center d-flex flex-column align-items-center p-0"
-              >
-                <div class="card product-card shadow-drop-2-bottom text-center">
-                  <div class="container-img">
-                    <img
-                      src="img/products/acrilpalst.jpg"
-                      alt="Producto 1"
-                      class="product-image mb-0"
-                    />
-                  </div>
-                  <div class="card-body">
-                    <h5 class="card-title">ACRILPLAST I/E</h5>
-                    <div class="card-body">
-                      <p class="card-text-description">
-                        Es un látex de uso interior y exterior que proporciona
-                        un acabado mate homogéneo, resistente a la intemperie ,
-                        a los lavados y gran poder cubritivo.
-                      </p>
-                    </div>
-                    <div class="card-text d-flex flex-column">
-                      <div
-                        class="d-flex flex-wrap gap-2 mb-3 justify-content-center"
-                      >
-                        <span class="badge bg-info text-dark">Lavable</span>
-                        <span class="badge bg-success">Mate</span>
-                        <span class="badge bg-primary">Base Agua</span>
-                      </div>
-                    </div>
-                    <div
-                      class="card-footer d-flex flex-column justify-content-around align-items-center gap-2"
-                    >
-                      <span class="card-price fw-bold" id="precioProducto"> $44.500 </span>
-                      <input
-                        type="checkbox"
-                        id="add2"
-                        class="add-check"
-                        hidden
-                      />
-                      <label for="add2" class="btn-cart">
-                        <span
-                          class="texto-original btn btn-primary btn-sm btn-cart" id="btnAgregar"
-                          >Agregar al carrito</span
-                        >
-                        <span
-                          class="texto-agregado btn btn-success btn-sm btn-cart"
-                          >✔ Agregado</span
-                        >
-                      </label>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Producto 3 -->
-            <div class="col-12 col-sm-6 col-lg-3 scale-in-bottom">
-              <div
-                class="card-body text-center d-flex flex-column align-items-center p-0"
-              >
-                <div class="card product-card shadow-drop-2-bottom text-center">
-                  <div class="container-img">
-                    <img
-                      src="img/products/brilloplastSR.jpg"
-                      alt="Producto 1"
-                      class="product-image mb-0"
-                    />
-                  </div>
-                  <div class="card-body">
-                    <h5 class="card-title">BRILLOPLAST S/R</h5>
-                    <div class="card-body">
-                      <p class="card-text-description">
-                        Esmalte sintético de secado rápido, de gran brillo y
-                        resistencia a la intemperie. Ideal para la protección y
-                        decoración de metal y madera.
-                      </p>
-                    </div>
-                    <div class="card-text d-flex flex-column">
-                      <div
-                        class="d-flex flex-wrap gap-2 mb-3 justify-content-center"
-                      >
-                        <span class="badge bg-info text-dark"
-                          >Base Solvente</span
-                        >
-                        <span class="badge bg-success">3 en 1</span>
-                        <span class="badge bg-primary">Secado Rápido</span>
-                      </div>
-                    </div>
-                    <div
-                      class="card-footer d-flex flex-column justify-content-around align-items-center gap-2"
-                    >
-                      <span class="card-price fw-bold" id="precioProducto"> $49.500 </span>
-                      <input
-                        type="checkbox"
-                        id="add3"
-                        class="add-check"
-                        hidden
-                      />
-                      <label for="add3" class="btn-cart">
-                        <span
-                          class="texto-original btn btn-primary btn-sm btn-cart" id="btnAgregar"
-                          >Agregar al carrito</span
-                        >
-                        <span
-                          class="texto-agregado btn btn-success btn-sm btn-cart"
-                          >✔ Agregado</span
-                        >
-                      </label>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Producto 4 -->
-            <div class="col-12 col-sm-6 col-lg-3 scale-in-bottom">
-              <div
-                class="card-body text-center d-flex flex-column align-items-center p-0"
-              >
-                <div class="card product-card shadow-drop-2-bottom text-center">
-                  <div class="container-img">
-                    <img
-                      src="img/products/cielorraso.jpg"
-                      alt="Producto 1"
-                      class="product-image mb-0"
-                    />
-                  </div>
-                  <div class="card-body">
-                    <h5 class="card-title">RECUPLAST CIELORRASO</h5>
-                    <div class="card-body">
-                      <p class="card-text-description">
-                        Látex con película de alta porosidad, que evita los
-                        problemas de condensación de humedad, especialmente
-                        enambientes mal ventilados.
-                      </p>
-                    </div>
-                    <div class="card-text d-flex flex-column">
-                      <div
-                        class="d-flex flex-wrap gap-2 mb-3 justify-content-center"
-                      >
-                        <span class="badge bg-info text-dark">Base Agua</span>
-                        <span class="badge bg-success">Anti-Hongo</span>
-                        <span class="badge bg-primary">Mate</span>
-                      </div>
-                    </div>
-                    <div
-                      class="card-footer d-flex flex-column justify-content-around align-items-center gap-2"
-                    >
-                      <span class="card-price fw-bold" id="precioProducto"> $22.500 </span>
-                      <input
-                        type="checkbox"
-                        id="add4"
-                        class="add-check"
-                        hidden
-                      />
-                      <label for="add4" class="btn-cart">
-                        <span
-                          class="texto-original btn btn-primary btn-sm btn-cart" id="btnAgregar"
-                          >Agregar al carrito</span
-                        >
-                        <span
-                          class="texto-agregado btn btn-success btn-sm btn-cart"
-                          >✔ Agregado</span
-                        >
-                      </label>
-                    </div>
-                  </div>
-                </div>
-              </div>
+    <!-- Sección de categorías principales -->
+    <section class="categorias container">
+      <div class="row gap-2 d-flex justify-content-around">
+        <article class="col text-center categorias-accesorios">
+          <a href="/pages/productos.html"> Accesorios </a>
+        </article>
+
+        <article class="col text-center categorias-pinturas">
+          <a href="/pages/productos.html"> Pinturas</a>
+        </article>
+
+        <article class="col text-center categorias-revestimientos">
+          <a href="/pages/productos.html"> Revestimientos</a>
+        </article>
+
+        <article class="col text-center categorias-herramientas">
+          <a href="/pages/productos.html"> Herramientas</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- Sección de productos nuevos -->
+    <section class="nuevos-productos container">
+      <div class="container py-4">
+        <h2 class="text-center mb-4">Nuevos productos</h2>
+        <div class="row g-4 container-products">
+          <p class="mensaje-carrito-vacio text-center text-muted mt-3 d-none">
+            No hay productos en el carrito.
+          </p>
+        </div>
+
+
+      </div>
+    </section>
+
+    <!-- Sección de preguntas frecuentes -->
+    <div class="container mt-4 p-2">
+      <h2 class="text-center mb-4 preguntas_frecuentes-text">
+        <i class="bi bi-patch-question"></i>
+        Preguntas frecuentes
+      </h2>
+
+      <div class="accordion accordion-flush d-flex flex-column gap-3 container" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              ¿De qué color debería pintar mi habitación o casa?
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              La elección del color depende del tipo de habitación y del
+              ambiente que se desea crear. Por ejemplo, los colores claros y
+              etéreos son ideales para dormitorios o baños, ya que ayudan a
+              ampliar el espacio. En cocinas, se prefieren tonos tierra para
+              una sensación de paz y tranquilidad.
             </div>
           </div>
         </div>
-      </section>
-
-      <!-- Sección de preguntas frecuentes -->
-      <div class="container mt-4 p-2">
-        <h2 class="text-center mb-4 preguntas_frecuentes-text">
-          <i class="bi bi-patch-question"></i>
-          Preguntas frecuentes
-        </h2>
-
-        <div
-          class="accordion accordion-flush d-flex flex-column gap-3 container"
-          id="accordionFlushExample"
-        >
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#flush-collapseOne"
-                aria-expanded="false"
-                aria-controls="flush-collapseOne"
-              >
-                ¿De qué color debería pintar mi habitación o casa?
-              </button>
-            </h2>
-            <div
-              id="flush-collapseOne"
-              class="accordion-collapse collapse"
-              data-bs-parent="#accordionFlushExample"
-            >
-              <div class="accordion-body">
-                La elección del color depende del tipo de habitación y del
-                ambiente que se desea crear. Por ejemplo, los colores claros y
-                etéreos son ideales para dormitorios o baños, ya que ayudan a
-                ampliar el espacio. En cocinas, se prefieren tonos tierra para
-                una sensación de paz y tranquilidad.
-              </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+              ¿Cuánta pintura necesito para mi proyecto?
+            </button>
+          </h2>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              La cantidad de pintura necesaria depende del área a cubrir y de
+              las características de la superficie. Por ejemplo, las
+              superficies texturizadas requieren más pintura que las lisas.
+              Además, si se realiza un cambio de color significativo, como de
+              oscuro a claro, puede ser necesario aplicar más capas.
             </div>
           </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#flush-collapseTwo"
-                aria-expanded="false"
-                aria-controls="flush-collapseTwo"
-              >
-                ¿Cuánta pintura necesito para mi proyecto?
-              </button>
-            </h2>
-            <div
-              id="flush-collapseTwo"
-              class="accordion-collapse collapse"
-              data-bs-parent="#accordionFlushExample"
-            >
-              <div class="accordion-body">
-                La cantidad de pintura necesaria depende del área a cubrir y de
-                las características de la superficie. Por ejemplo, las
-                superficies texturizadas requieren más pintura que las lisas.
-                Además, si se realiza un cambio de color significativo, como de
-                oscuro a claro, puede ser necesario aplicar más capas.
-              </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+              ¿Qué tipo de pintura debo usar para cada superficie?
+            </button>
+          </h2>
+          <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              Existen diferentes tipos de pintura según la superficie y el
+              acabado deseado. Por ejemplo, la pintura plástica es común para
+              interiores, mientras que el esmalte sintético se utiliza para
+              metales y maderas. Es importante elegir la pintura adecuada para
+              garantizar durabilidad y un buen acabado.
             </div>
           </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#flush-collapseThree"
-                aria-expanded="false"
-                aria-controls="flush-collapseThree"
-              >
-                ¿Qué tipo de pintura debo usar para cada superficie?
-              </button>
-            </h2>
-            <div
-              id="flush-collapseThree"
-              class="accordion-collapse collapse"
-              data-bs-parent="#accordionFlushExample"
-            >
-              <div class="accordion-body">
-                Existen diferentes tipos de pintura según la superficie y el
-                acabado deseado. Por ejemplo, la pintura plástica es común para
-                interiores, mientras que el esmalte sintético se utiliza para
-                metales y maderas. Es importante elegir la pintura adecuada para
-                garantizar durabilidad y un buen acabado.
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#flush-collapseFour"
-                aria-expanded="false"
-                aria-controls="flush-collapseFour"
-              >
-                ¿Cuántas manos de pintura son necesarias?
-              </button>
-            </h2>
-            <div
-              id="flush-collapseFour"
-              class="accordion-collapse collapse"
-              data-bs-parent="#accordionFlushExample"
-            >
-              <div class="accordion-body">
-                El número de manos de pintura necesarias depende del color
-                anterior y del nuevo color. Si se cambia de un color oscuro a
-                uno claro, puede ser necesario aplicar una mano de blanco antes
-                para ahorrar pintura y lograr un acabado uniforme.
-              </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+              ¿Cuántas manos de pintura son necesarias?
+            </button>
+          </h2>
+          <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              El número de manos de pintura necesarias depende del color
+              anterior y del nuevo color. Si se cambia de un color oscuro a
+              uno claro, puede ser necesario aplicar una mano de blanco antes
+              para ahorrar pintura y lograr un acabado uniforme.
             </div>
           </div>
         </div>
       </div>
+    </div>
 
-      <section class="marcas-section container mt-4 d-flex flex-column gap-4 justify-content-center align-items-center text-center">
-        <h2>Nuestras Marcas</h2>
-        <div class="row align-items-center justify-content-center">
-          <div class="marca-item col-6 col-md-2 col-lg-2">
-            <img
-              src="/img/Marcas/sinteplast-seeklogo.png"
-              alt="Sinteplast"
-              class="w-50 brand-logo"
-            />
-          </div>
-          <div class="marca-item col-6 col-md-2 col-lg-2">
-            <img
-              src="/img/Marcas/cetol-seeklogo.png"
-              alt="Cetol"
-              class="w-50 brand-logo"
-            />
-          </div>
-          <div class="marca-item col-6 col-md-2 col-lg-2">
-            <img
-              src="/img/Marcas/colorin.png"
-              alt="colorin"
-              class="w-50 brand-logo bg-black"
-            />
-          </div>
-          <div class="marca-item col-6 col-md-2 col-lg-2">
-            <img
-              src="/img/Marcas/sherwin-williams-2-logo-svg-vector.svg"
-              alt="sherwin-williams"
-              class="w-50 brand-logo"
-            />
-          </div>
-          <div class="marca-item py-2 rounded-2 col-6 col-md-2 col-lg-2">
-            <img
-              src="/img/Marcas/logo.png"
-              alt="plavicon"
-              class="w-50 brand-logo"
-            />
-          </div>
+    <section
+      class="marcas-section container mt-4 d-flex flex-column gap-4 justify-content-center align-items-center text-center">
+      <h2>Nuestras Marcas</h2>
+      <div class="row align-items-center justify-content-center">
+        <div class="marca-item col-6 col-md-2 col-lg-2">
+          <img src="/img/Marcas/sinteplast-seeklogo.png" alt="Sinteplast" class="w-50 brand-logo" />
         </div>
+        <div class="marca-item col-6 col-md-2 col-lg-2">
+          <img src="/img/Marcas/cetol-seeklogo.png" alt="Cetol" class="w-50 brand-logo" />
+        </div>
+        <div class="marca-item col-6 col-md-2 col-lg-2">
+          <img src="/img/Marcas/colorin.png" alt="colorin" class="w-50 brand-logo bg-black" />
+        </div>
+        <div class="marca-item col-6 col-md-2 col-lg-2">
+          <img src="/img/Marcas/sherwin-williams-2-logo-svg-vector.svg" alt="sherwin-williams"
+            class="w-50 brand-logo" />
+        </div>
+        <div class="marca-item py-2 rounded-2 col-6 col-md-2 col-lg-2">
+          <img src="/img/Marcas/logo.png" alt="plavicon" class="w-50 brand-logo" />
+        </div>
+      </div>
       </div>
       <!-- Sección de testimonios -->
 
@@ -629,10 +288,7 @@
       <section class="testimonials container">
         <div class="slide-fwd-top testimonial">
           <div class="testimonial-image">
-            <img
-              src="https://randomuser.me/api/portraits/men/83.jpg"
-              alt="Persona 1"
-            />
+            <img src="https://randomuser.me/api/portraits/men/83.jpg" alt="Persona 1" />
           </div>
           <div class="testimonial-text">
             <blockquote>
@@ -645,10 +301,7 @@
 
         <div class="slide-fwd-top testimonial">
           <div class="testimonial-image">
-            <img
-              src="https://randomuser.me/api/portraits/men/78.jpg"
-              alt="Persona 2"
-            />
+            <img src="https://randomuser.me/api/portraits/men/78.jpg" alt="Persona 2" />
           </div>
           <div class="testimonial-text">
             <blockquote>
@@ -661,10 +314,7 @@
 
         <div class="slide-fwd-top testimonial">
           <div class="testimonial-image">
-            <img
-              src="https://randomuser.me/api/portraits/men/79.jpg"
-              alt="Persona 3"
-            />
+            <img src="https://randomuser.me/api/portraits/men/79.jpg" alt="Persona 3" />
           </div>
           <div class="testimonial-text">
             <blockquote>
@@ -678,10 +328,7 @@
 
         <div class="slide-fwd-top testimonial">
           <div class="testimonial-image">
-            <img
-              src="https://randomuser.me/api/portraits/men/80.jpg"
-              alt="Persona 4"
-            />
+            <img src="https://randomuser.me/api/portraits/men/80.jpg" alt="Persona 4" />
           </div>
           <div class="testimonial-text">
             <blockquote>
@@ -694,10 +341,7 @@
 
         <div class="slide-fwd-top testimonial">
           <div class="testimonial-image">
-            <img
-              src="https://randomuser.me/api/portraits/men/81.jpg"
-              alt="Persona 5"
-            />
+            <img src="https://randomuser.me/api/portraits/men/81.jpg" alt="Persona 5" />
           </div>
           <div class="testimonial-text">
             <blockquote>
@@ -710,10 +354,7 @@
 
         <div class="slide-fwd-top testimonial">
           <div class="testimonial-image">
-            <img
-              src="https://randomuser.me/api/portraits/men/82.jpg"
-              alt="Persona 6"
-            />
+            <img src="https://randomuser.me/api/portraits/men/82.jpg" alt="Persona 6" />
           </div>
           <div class="testimonial-text">
             <blockquote>
@@ -724,25 +365,53 @@
           </div>
         </div>
       </section>
-    </main>
+  </main>
+  <!-- Modal -->
+  <div class="modal fade" id="modalCarrito" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="modalCarritoLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+      <div class="modal-content">
 
-    <!-- Pie de página -->
-    <footer>
-      <p>
-        <i class="far fa-copyright"></i> Copyright 2025 SAGO Pinturas. Todos los
-        derechos reservados.
-      </p>
-    </footer>
+        <!-- Encabezado -->
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="modalCarritoLabel">Carrito de Compras</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
 
-    <script src="/script/index.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
-  </body>
+        <!-- Cuerpo con lista de productos -->
+        <div class="modal-body">
+          <ul class="list-group list-group-flush list-group-carrito"></ul>
+        </div>
+
+        <!-- Total del carrito -->
+        <div class="modal-footer justify-content-between bg-light">
+          <strong>Total: $<span class="total-carrito">0</span></strong>
+          <div>
+            <button type="button" class="btn btn-secondary me-2" data-bs-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-success">Finalizar Compra</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Pie de página -->
+  <footer>
+    <p>
+      <i class="far fa-copyright"></i> Copyright 2025 SAGO Pinturas. Todos los
+      derechos reservados.
+    </p>
+  </footer>
+
+  <script src="/script/index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
 </html>
