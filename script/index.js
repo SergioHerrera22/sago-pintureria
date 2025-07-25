@@ -43,6 +43,7 @@ const productos = [
 const btnCarrito = document.querySelector(".btn-carrito");
 const listGroup = document.querySelector(".list-group");
 const totalCarrito = document.querySelector(".total-carrito");
+const userLogin = document.querySelector(".userLogin");
 
 const calcularTotalCarrito = () => {
   const listaCarrito = leerElementosLocalStorage();
@@ -224,6 +225,15 @@ const renderizarProductos = () => {
   const btnsAgregar = contenedorProductos.querySelectorAll(".btn-cart");
   btnsAgregar.forEach((btn) => {
     btn.addEventListener("click", (e) => {
+      Toastify({
+        text: "Producto agregado al carrito",
+        duration: 3000,
+        gravity: "bottom",
+        position: "right",
+        style: {
+          background: "linear-gradient(to right, #00b09b, #96c93d)",
+        },
+      });
       const id = e.currentTarget.getAttribute("data-id");
       const producto = productos.find((p) => p.id === id);
       if (producto) agregarAlCarritoLocalStorage(producto);
@@ -241,11 +251,22 @@ const renderizarProductos = () => {
 };
 
 document.addEventListener("DOMContentLoaded", () => {
-  setTimeout(() => {
+  // Verificar si hay un usuario logueado
+  const nombreUsuario = sessionStorage.getItem("usuarioLogueado");
+  if (nombreUsuario) {
+    userLogin.textContent = `Hola, ${JSON.parse(nombreUsuario)}`;
+    userLogin.href = "#micuenta"; // Cambia el enlace a la sección de cuenta
+  } else {
+    userLogin.textContent = "Iniciar Sesión";
+    userLogin.href = "/pages/login.html"; // Redirige al login si no hay usuario
+  }
+
+  if (nombreUsuario) {
     renderizarProductos();
 
     // Ocultar el loader una vez que los productos reales se cargan
     const skeleton = document.getElementById("skeleton-loader");
     if (skeleton) skeleton.style.display = "none";
-  }, 1000); // Simula un retraso de carga de 1 segundo
+    // Simula un retraso de carga de 1 segundo
+  }
 });

@@ -1,0 +1,74 @@
+[
+  {
+    "id": "add1",
+    "nombre": "RECUPLAST ATÉRMICO",
+    "descripcion": "Su fórmula con microesferas de vidrio refleja más del 80% de los rayos solares, reduciendo la temperatura interior y ahorrando energía eléctrica.",
+    "precio": 48500,
+    "imagenUrl": "../img/products/atermico.jpg",
+    "badges": ["Base Agua", "Reflectiva", "Impermeable"],
+    "cantidad": 0
+  },
+  {
+    "id": "add2",
+    "nombre": "ACRILPLAST I/E",
+    "descripcion": "Es un látex de uso interior y exterior que proporciona un acabado mate homogéneo, resistente a la intemperie , a los lavados y gran poder cubritivo.",
+    "precio": 48500,
+    "imagenUrl": "../img/products/acrilpalst.jpg",
+    "badges": ["Lavable", "Mate", "Base Agua"],
+    "cantidad": 0
+  },
+  {
+    "id": "add3",
+    "nombre": "BRILLOPLAST S/R",
+    "descripcion": "Esmalte sintético de secado rápido, de gran brillo y resistencia a la intemperie. Ideal para la protección y decoración de metal y madera.",
+    "precio": 48500,
+    "imagenUrl": "../img/products/brilloplastSR.jpg",
+    "badges": ["Base Solvente", "3 en 1", "Secado Rápido"],
+    "cantidad": 0
+  },
+  {
+    "id": "add4",
+    "nombre": "RECUPLAST CIELORRASO",
+    "descripcion": "Látex con película de alta porosidad, que evita los problemas de condensación de humedad, especialmente en ambientes mal ventilados.",
+    "precio": 48500,
+    "imagenUrl": "../img/products/cielorraso.jpg",
+    "badges": ["Base Agua", "Anti-Hongo", "Mate"],
+    "cantidad": 0
+  },
+  {
+    "id": "add5",
+    "nombre": "FERROXÍN",
+    "descripcion": "Esmalte de terminación para aplicar directamente sobre hierro, al que le otorga protección contra la oxidación y un particular efecto decorativo.",
+    "precio": 48500,
+    "imagenUrl": "../img/products/ferroxin.jpg",
+    "badges": ["Base Solvente", "Efecto Rústico", "2 en 1"],
+    "cantidad": 0
+  },
+  {
+    "id": "add6",
+    "nombre": "RECUBRICK",
+    "descripcion": "Recubrimiento plástico que impermeabiliza las superficies y las protege de suciedad, hongos, manchas, etc. Realza la belleza natural de los materiales nobles.",
+    "precio": 48500,
+    "imagenUrl": "../img/products/recubrick.jpg",
+    "badges": ["Base Agua", "Satinado", "Impermeable"],
+    "cantidad": 0
+  },
+  {
+    "id": "add7",
+    "nombre": "RECUPLAST INTERIOR",
+    "descripcion": "Látex premium interior. Para proteger y decorar interiores, de fácil aplicación con mínimo salpicado, buen nivelamiento y excelente poder cubriente.",
+    "precio": 48500,
+    "imagenUrl": "../img/products/interior.jpg",
+    "badges": ["Base Agua", "Mate", "Colores"],
+    "cantidad": 0
+  },
+  {
+    "id": "add8",
+    "nombre": "RECUPLAST TECHOS",
+    "descripcion": "Impermeabilizante acrílico para techos de base acuosa. Aplicado en el espesor recomendado, una vez seco, forma una película super elástica de alta resistencia.",
+    "precio": 48500,
+    "imagenUrl": "../img/products/techos.jpg",
+    "badges": ["Base Agua", "Reflectiva", "Impermeable"],
+    "cantidad": 0
+  }
+]
