@@ -1,7 +1,3 @@
-// Asegúrate de que users.js esté incluido antes de este script en tu HTML con un <script src="../users.js"></script>
-// O si usas módulos ES6, usa la siguiente línea:
-// import { users } from "../users.js";
-
 const users = [
   {
     id: 1,
@@ -10,6 +6,18 @@ const users = [
     nombre: "Administrador",
   },
 ];
+// Colocar en todas tus páginas justo después del navbar (o en el script de sesión)
+const user = sessionStorage.getItem("usuarioLogueado");
+if (user && JSON.parse(user) === "Administrador") {
+  const nav = document.querySelector(".navbar-nav.ms-auto");
+  const li = document.createElement("li");
+  li.className = "nav-item";
+  li.innerHTML = `
+    <a class="nav-link" href="/pages/admin.html">
+      <i class="fas fa-tools"></i> Admin
+    </a>`;
+  nav.appendChild(li);
+}
 
 const formulario = document.querySelector("#login-form");
 

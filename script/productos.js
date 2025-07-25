@@ -6,18 +6,34 @@ const btnCarrito = document.querySelector(".btn-carrito");
 const listGroup = document.querySelector(".list-group");
 const totalCarrito = document.querySelector(".total-carrito");
 
+document.addEventListener("DOMContentLoaded", () => {
+  const usuarioLogueado = sessionStorage.getItem("usuarioLogueado");
+
+  if (usuarioLogueado) {
+    const nombre = JSON.parse(usuarioLogueado);
+    const enlaceCuenta = document.querySelector(
+      ".nav-link[href*='micuenta'], .nav-link[href*='login.html']"
+    );
+
+    if (enlaceCuenta) {
+      enlaceCuenta.innerHTML = `<i class="fas fa-user"></i> ${nombre}`;
+      enlaceCuenta.href = "#micuenta"; // O redirigir a alguna futura sección personalizada
+    }
+  }
+});
+
 // 🚀 Carga los productos desde productos.json y los guarda en el array global
 const cargarProductosDesdeJSON = async () => {
   try {
-    const res = await fetch("/script/productos.json");
+    const res = await fetch("../script/productos.json");
     if (!res.ok) throw new Error("No se pudo cargar el archivo JSON");
     const data = await res.json();
     productos.push(...data);
+    return data; // <-- Esto ayuda a depurar también
   } catch (err) {
     console.error("❌ Error al obtener productos:", err);
   }
 };
-cargarProductosDesdeJSON();
 
 // 📦 Obtiene el carrito guardado en localStorage o retorna un array vacío
 const obtenerCarrito = () => {
@@ -225,13 +241,10 @@ const mostrarToast = (mensaje) => {
 };
 
 // 🧠 Evento principal cuando el DOM está listo
-document.addEventListener("DOMContentLoaded", () => {
-  setTimeout(() => {
-    renderizarProductos();
 
-    const skeleton = document.getElementById("skeleton-loader");
-    if (skeleton) skeleton.style.display = "none";
-  }, 1000);
+document.addEventListener("DOMContentLoaded", async () => {
+  await cargarProductosDesdeJSON(); // Espera que se carguen los productos
+  renderizarProductos(); // Ahora sí, productos ya tiene datos
 });
 
 // 🛒 Botón para abrir el carrito
